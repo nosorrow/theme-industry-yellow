@@ -1,3 +1,7 @@
+#hero {
+  padding-top: 1rem !important;
+}
+
 .top-bgr {
   background: url("../img/hero.jpg") 50% 0 no-repeat fixed;
   margin: 0;
@@ -7,14 +11,24 @@
 }
 
 .top-contacts {
-  top: 0;
-  position: absolute;
   height: 50px;
   color: white;
 }
 .top-contacts .nav-item {
   color: white;
   letter-spacing: -0.5px;
+}
+
+.hero-content {
+  padding: 100px;
+  text-align: right;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 5rem !important;
+}
+.hero-content h1 span {
+  color: #f5d109;
 }
 
 /*# sourceMappingURL=style.css.map */

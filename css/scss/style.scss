@@ -1,5 +1,7 @@
 @import 'partials/variables';
-
+#hero {
+  padding-top: 1rem !important;
+}
 .top-bgr {
   background: url("../img/hero.jpg") 50% 0 no-repeat fixed;
   margin: 0;
@@ -10,12 +12,22 @@
 }
 
 .top-contacts {
-  top:0;
-  position: absolute;
   height: 50px;
   color: white;
   .nav-item {
     color: white;
     letter-spacing: -0.5px;
+  }
+}
+
+.hero-content {
+  padding: 100px;
+  text-align: right;
+  color: white;
+  h1{
+    font-size: 5rem !important;
+    span {
+      color: #f5d109;
+    }
   }
 }
