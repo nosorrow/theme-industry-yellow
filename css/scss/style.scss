@@ -1,4 +1,5 @@
 @import 'partials/variables';
+
 #hero {
   padding-top: 1rem !important;
 }
@@ -30,4 +31,21 @@
       color: #f5d109;
     }
   }
+}
+
+// Button Yellow
+.btn-yellow {
+  color: #fff;
+  background-color: $btn-yellow-bgr;
+  border-color: $btn-yellow-border;
+}
+
+.btn-yellow:hover {
+  color: #fff;
+  background-color: $btn-yellow-bgr-hover;
+  border-color: $btn-yellow-border;
+}
+
+a.nav-link:hover {
+  border: 3px yellow !important;
 }

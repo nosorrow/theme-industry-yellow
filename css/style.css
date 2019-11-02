@@ -31,4 +31,20 @@
   color: #f5d109;
 }
 
+.btn-yellow {
+  color: #fff;
+  background-color: #e6c402;
+  border-color: #d7be15;
+}
+
+.btn-yellow:hover {
+  color: #fff;
+  background-color: #d1b815;
+  border-color: #d7be15;
+}
+
+a.nav-link:hover {
+  border: 3px yellow !important;
+}
+
 /*# sourceMappingURL=style.css.map */
