@@ -7,7 +7,7 @@ body {
   padding-top: 1rem !important;
 }
 
-.top-bgr {
+.byt-top-bgr {
   background: url("../img/hero.jpg") 50% 0 no-repeat fixed;
   margin: 0;
   min-height: 600px;
@@ -15,41 +15,65 @@ body {
   border-radius: 0 !important;
 }
 
-.top-contacts {
+.byt-top-contacts {
   height: 50px;
   color: white;
 }
-.top-contacts .nav-item {
+.byt-top-contacts .nav-item {
   color: white;
   letter-spacing: -0.5px;
 }
 
-.hero-content {
+.byt-hero-content {
   padding: 100px;
   text-align: right;
   color: white;
 }
-.hero-content h1 {
+.byt-hero-content h1 {
   font-size: 5rem !important;
 }
-.hero-content h1 span {
+.byt-hero-content h1 span {
   color: #f5d109;
 }
 
-.btn-yellow {
+a.nav-link {
+  letter-spacing: -1px;
+}
+
+li.nav-item:hover {
+  border-bottom: 3px solid #f5d109;
+}
+
+li.nav-item.active {
+  border-bottom: 3px solid #f5d109;
+}
+
+.byt-btn-yellow {
   color: #fff;
   background-color: #f5d109;
   border-color: #d7be15;
 }
 
-.btn-yellow:hover {
+.byt-btn-yellow:hover {
   color: #fff;
   background-color: #d1b815;
   border-color: #d7be15;
 }
 
-li.nav-item:hover {
+.byt-sect-mb {
+  margin-bottom: 90px;
+}
+
+.byt-sect-title {
+  letter-spacing: -0.5px;
+}
+
+.byt-sect-title:after {
   border-bottom: 3px solid #f5d109;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

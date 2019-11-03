@@ -2,19 +2,19 @@
 body {
   font-family: $font-family;
 }
+// Section Hero
 #hero {
   padding-top: 1rem !important;
 }
-.top-bgr {
+.byt-top-bgr {
   background: url("../img/hero.jpg") 50% 0 no-repeat fixed;
   margin: 0;
-  //padding: 200px 0 260px 0;
   min-height: 600px;
   background-size: cover;
   border-radius: 0 !important;
 }
 
-.top-contacts {
+.byt-top-contacts {
   height: 50px;
   color: white;
   .nav-item {
@@ -23,7 +23,7 @@ body {
   }
 }
 
-.hero-content {
+.byt-hero-content {
   padding: 100px;
   text-align: right;
   color: white;
@@ -34,20 +34,42 @@ body {
     }
   }
 }
+// Navbar styling
+a.nav-link {
+  letter-spacing: -1px;
+}
 
+li.nav-item:hover {
+  border-bottom: 3px solid $theme-yellow;
+}
+li.nav-item.active {
+  border-bottom: 3px solid $theme-yellow;
+}
 // Button Yellow
-.btn-yellow {
+.byt-btn-yellow {
   color: #fff;
   background-color: $btn-yellow-bgr;
   border-color: $btn-yellow-border;
 }
 
-.btn-yellow:hover {
+.byt-btn-yellow:hover {
   color: #fff;
   background-color: $btn-yellow-bgr-hover;
   border-color: $btn-yellow-border;
 }
 
-li.nav-item:hover {
-  border-bottom: 3px solid $theme-yellow;
+// Sections
+.byt-sect-mb {
+  margin-bottom: 90px;
+}
+.byt-sect-title{
+  letter-spacing: -0.5px;
+}
+
+.byt-sect-title:after{
+  border-bottom:3px solid $theme-yellow;
+  display: block;
+  margin:0 auto;
+  content: " ";
+  width:100px;
 }
