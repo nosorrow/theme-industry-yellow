@@ -43,6 +43,7 @@ body {
 }
 
 // Navbar styling
+
 a.nav-link {
   letter-spacing: -1px;
 }
@@ -68,7 +69,8 @@ li.nav-item.active {
   border-color: $btn-yellow-border;
 }
 
-// Sections
+
+// * Sections
 .byt-sect-mb {
   margin-bottom: 90px;
 }
@@ -120,4 +122,27 @@ li.nav-item.active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+
+//  ** Section services
+.byt-img-container {
+  position: relative;
+  color:white;
+}
+
+.byt-service-label {
+  position: absolute;
+  padding: 10px;
+  bottom: 15px;
+  right: 30px;
+
+  .byt-service-lbl-yll {
+    background: $theme-yellow;
+    padding: 10px;
+
+  }
+  .byt-service-lbl-bl {
+    background: black;
+    padding: 10px;
+  }
 }

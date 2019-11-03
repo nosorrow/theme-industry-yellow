@@ -114,4 +114,24 @@ li.nav-item.active {
   border-radius: 50%;
 }
 
+.byt-img-container {
+  position: relative;
+  color: white;
+}
+
+.byt-service-label {
+  position: absolute;
+  padding: 10px;
+  bottom: 15px;
+  right: 30px;
+}
+.byt-service-label .byt-service-lbl-yll {
+  background: #f5d109;
+  padding: 10px;
+}
+.byt-service-label .byt-service-lbl-bl {
+  background: black;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
