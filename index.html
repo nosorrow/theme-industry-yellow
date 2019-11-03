@@ -19,7 +19,7 @@
 <body>
 <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-		your browser</a> to improve your experience and security.</p>
+	your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
 <!--   ======================================= Start ======================================================= -->
@@ -80,8 +80,6 @@
 		</div>
 	</div>
 </div>
-<!--   End section Hero -->
-
 <!--  Start section Services -->
 <section id="services" class="container byt-sect-mb">
 	<div class="row">
@@ -101,8 +99,50 @@
 		</div>
 	</div>
 </section>
-<!--   End section Services -->
-
+<!--   start section Mission -->
+<section id="mission" class="container byt-sect-mb">
+	<div class="row">
+		<div class="col text-center mb-5">
+			<h1 class="byt-sect-title display-4 mb-5">Our mission</h1>
+			<p class="byt-sect-content-p">Aenean a rhoncus dui. Quisque fermentum, felis non rutrum condimentum,
+				lacus ex viverra ante, ut commodo lectus ipsum vitae ante.
+				Sed volutpat sagittis tincidunt. Cras risus leo, sagittis a erat et, varius finibus leo. </p>
+		</div>
+	</div>
+</section>
+<!--   End section Mission -->
+<!--   Start section Testimonials -->
+<section class="container-fluid byt-testimon-bgr">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active text-center byt-carousel">
+				<img src="img/portrait-1.jpg" class="rounded-circle" alt="">
+				<h5>Steve Harris</h5>
+				<h6>Engineer</h6>
+				<p class="w-50">Sed fermentum orci neque, vitae tristique nulla faucibus nec.
+					Duis pellentesque nulla quis eros placerat varius.
+					Quisque in tempus quam. Donec pulvinar orci in elit facilisis, at ornare lorem euismod.</p>
+			</div>
+			<div class="carousel-item text-center byt-carousel">
+				<img src="img/portrait-2.jpg" class="rounded-circle" alt="">
+				<p class="w-50">Sed fermentum orci neque, vitae tristique nulla faucibus nec.
+					Duis pellentesque nulla quis eros placerat varius.
+					Quisque in tempus quam. Donec pulvinar orci in elit facilisis, at ornare lorem euismod.</p>
+			</div>
+			<div class="carousel-item text-center byt-carousel">
+				<img src="img/portrait-1.jpg" class="rounded-circle" alt="">
+				<p class="w-50">Sed fermentum orci neque, vitae tristique nulla faucibus nec.
+					Duis pellentesque nulla quis eros placerat varius.
+					Quisque in tempus quam. Donec pulvinar orci in elit facilisis, at ornare lorem euismod.</p>
+			</div>
+		</div>
+	</div>
+</section>
 <!--  ============================================================================================================= -->
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -127,5 +167,16 @@
     ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<script>
+    /*    $(".carousel .carousel-item").each(function(){
+						if($(this).height()>maxHeight){
+								maxHeight=$(this).height();
+						}
+				});
+				$(".carousel .carousel-item").each(function(){
+						$(".carousel .carousel-item").height(maxHeight);
+				});*/
+</script>
 </body>
 </html>
