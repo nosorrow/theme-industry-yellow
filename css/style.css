@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
+body {
+  font-family: "Hind", "Helvetica", sans-serif;
+}
+
 #hero {
   padding-top: 1rem !important;
 }
@@ -33,7 +38,7 @@
 
 .btn-yellow {
   color: #fff;
-  background-color: #e6c402;
+  background-color: #f5d109;
   border-color: #d7be15;
 }
 
@@ -43,8 +48,8 @@
   border-color: #d7be15;
 }
 
-a.nav-link:hover {
-  border: 3px yellow !important;
+li.nav-item:hover {
+  border-bottom: 3px solid #f5d109;
 }
 
 /*# sourceMappingURL=style.css.map */

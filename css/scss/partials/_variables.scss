@@ -1,5 +1,9 @@
-$theme-yellow: #e6c402;
-$font-color: #666;
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+$theme-yellow: #f5d109;
 $btn-yellow-bgr: $theme-yellow;
 $btn-yellow-border: #d7be15;
 $btn-yellow-bgr-hover: #d1b815;
+
+// Fonts
+$font-family: 'Hind', 'Helvetica', sans-serif;
