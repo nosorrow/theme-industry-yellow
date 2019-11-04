@@ -136,9 +136,10 @@ li.nav-item.active {
   background-color: $theme-yellow;
   padding: 0;
   border: none;
+  margin: 0 15px 15px 15px;
 }
 
-.image-hover {
+.byt-image-hover {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -154,8 +155,8 @@ li.nav-item.active {
   -ms-transform: translate(-50%, -50%)
 }
 
-.byt-img-container:hover .image-hover {
-  opacity: 0.5;
+.byt-img-container:hover .byt-image-hover {
+  opacity: 0.1;
 }
 
 .byt-img-container:hover .middle {
