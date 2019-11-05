@@ -172,10 +172,16 @@ a.nav-link {
   color: #000;
   font-weight: bolder;
 }
+.byt-project-text p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
 .byt-project-text a {
-  font-size: 1.8rem;
   font-weight: bolder;
   color: white;
+}
+.byt-project-text a i {
+  font-size: 1.8rem;
 }
 
 /* 1. Image hover Effects */
@@ -199,6 +205,7 @@ a.nav-link {
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   backface-visibility: hidden;
+  cursor: grab;
 }
 
 .middle {

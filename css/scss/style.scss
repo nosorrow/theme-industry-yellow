@@ -161,15 +161,17 @@ a.nav-link {
   padding: 15px 30px;
   margin: -30px 0;
   color: white;
-  top:30%;
+  top: 30%;
   visibility: hidden;
   opacity: 0;
+
   h4 {
     color: #000;
     font-weight: bolder;
   }
+
   a {
-    color:#000;
+    color: #000;
     font-size: 1rem;
     font-weight: bolder;
 
@@ -181,16 +183,26 @@ a.nav-link {
   -webkit-transition: all 0.4s ease-in;
   position: absolute;
   color: white;
-  top:30%;
+  top: 30%;
   opacity: 1;
+
   h4 {
     color: #000;
     font-weight: bolder;
   }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: lighter;
+  }
+
   a {
-    font-size: 1.8rem;
     font-weight: bolder;
-    color:white;
+    color: white;
+    i {
+      font-size: 1.8rem;
+    }
+
   }
 }
 
@@ -216,6 +228,7 @@ a.nav-link {
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   backface-visibility: hidden;
+  cursor: grab;
 }
 
 .middle {
@@ -233,7 +246,7 @@ a.nav-link {
   opacity: 0.1;
 }
 
-.byt-project-img-container:hover .byt-image-hover{
+.byt-project-img-container:hover .byt-image-hover {
   opacity: 0.3;
 }
 
@@ -245,6 +258,7 @@ a.nav-link {
 .byt-img-container:hover .byt-service-label {
   display: none;
 }
+
 .byt-img-container:hover .byt-service-text {
   display: block;
   visibility: visible;
