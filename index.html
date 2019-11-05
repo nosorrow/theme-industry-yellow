@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="">
+	<title>Idustrial Theme Yallow</title>
+	<meta name="description" content="Blue & yellow bootstrap industrial theme">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="shortcut icon" href="favicon.png">
 	<!-- Place favicon.ico in the root directory -->
 	<link rel="stylesheet" href="css/vendor/normalize.css">
 	<link rel="stylesheet" href="css/vendor/bootstrap.css">
 	<link rel="stylesheet" href="css/vendor/font-awesome-5/css/all.css">
-	<link type="text/css" rel="stylesheet" href="css/vendor/lightslider/src/css/lightslider.css" />
+	<link type="text/css" rel="stylesheet" href="css/vendor/lightslider/src/css/lightslider.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -95,7 +95,7 @@
 				<div class="byt-service-text">
 					<h4><img src="img/building.png" alt=""> Loren working</h4>
 					<p>Integer eros quam, molestie vel condimentum in, aliquam id lacus.
-						 Morbi ut lectus faucibus, facilisis enim non, vehicula augue. </p>
+						Morbi ut lectus faucibus, facilisis enim non, vehicula augue. </p>
 					<a href="#">View more</a>
 				</div>
 			</div>
@@ -188,8 +188,8 @@
 	</div>
 	<hr>
 </section>
-<!--   Start section Projects slider-->
-<section id="projects-slider" class="container byt-sect-mb">
+<!--   Start Projects slider-->
+<div id="projects-slider" class="container byt-sect-mb">
 	<div class="row">
 		<div class="col">
 			<ul id="lightSlider">
@@ -259,7 +259,7 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 <!--  ============================================================================================================= -->
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -285,24 +285,25 @@
     ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
-
 <script>
-    /*    $(".carousel .carousel-item").each(function(){
-						if($(this).height()>maxHeight){
-								maxHeight=$(this).height();
-						}
-				});
-				$(".carousel .carousel-item").each(function(){
-						$(".carousel .carousel-item").height(maxHeight);
-				});*/
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
+
+        var maxHeight = 0;
+        $(".carousel .carousel-item").each(function () {
+            if ($(this).height() > maxHeight) {
+                maxHeight = $(this).height();
+            }
+        });
+        $(".carousel .carousel-item").each(function () {
+            $(".carousel .carousel-item").height(maxHeight);
+        });
+
+        /* Lightslider configuration */
         $("#lightSlider").lightSlider({
-            item:4,
-            autoWidth:true,
-						pager:false,
-				});
+            item: 4,
+            autoWidth: true,
+            pager: false,
+        });
     });
 </script>
 </body>
