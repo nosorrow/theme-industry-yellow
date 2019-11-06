@@ -37,6 +37,14 @@
       color: #f5d109;
     }
   }
+
+  h5 {
+    max-width: 50%;
+    text-align: right;
+    margin-left: 50%;
+    line-height: 2rem;
+  }
+
 }
 
 /* Navbar styling */
@@ -75,7 +83,7 @@ a.nav-link {
   border-color: $btn-yellow-border;
 }
 
-/* Media queryes */
+/* Hero Media queries for mobile devices */
 
 @media screen and (max-width: 480px) {
 
@@ -102,7 +110,7 @@ a.nav-link {
   }
 
   .byt-hero-content {
-    padding: 50px;
+    padding: 30px 10px;
     text-align: center;
     color: white;
 
@@ -114,8 +122,13 @@ a.nav-link {
         color: #f5d109;
       }
     }
-    h3 {
-      font-size: 1.5rem;
+
+    h5 {
+      font-size: 1.3rem;
+      text-align: center;
+      min-width: 100%;
+      margin: 0;
     }
+
   }
 }

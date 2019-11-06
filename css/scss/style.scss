@@ -228,3 +228,14 @@ body {
   }
 }
 
+/* Section Testimonial Carousel Media queries*/
+@media all and (min-width: 900px) {
+
+  .carousel-item {
+    p {
+      width: 50% !important;
+
+    }
+  }
+
+}

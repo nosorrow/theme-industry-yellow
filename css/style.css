@@ -34,6 +34,12 @@
 .byt-hero-content h1 span {
   color: #f5d109;
 }
+.byt-hero-content h5 {
+  max-width: 50%;
+  text-align: right;
+  margin-left: 50%;
+  line-height: 2rem;
+}
 
 /* Navbar styling */
 .navbar {
@@ -70,7 +76,7 @@ a.nav-link {
   border-color: #d7be15;
 }
 
-/* Media queryes */
+/* Hero Media queries for mobile devices */
 @media screen and (max-width: 480px) {
   .byt-top-bgr {
     background: url("../img/hero-mobile.png") 30% 0 no-repeat fixed;
@@ -94,7 +100,7 @@ a.nav-link {
   }
 
   .byt-hero-content {
-    padding: 50px;
+    padding: 30px 10px;
     text-align: center;
     color: white;
   }
@@ -105,8 +111,11 @@ a.nav-link {
   .byt-hero-content h1 span {
     color: #f5d109;
   }
-  .byt-hero-content h3 {
-    font-size: 1.5rem;
+  .byt-hero-content h5 {
+    font-size: 1.3rem;
+    text-align: center;
+    min-width: 100%;
+    margin: 0;
   }
 }
 body {
@@ -309,6 +318,13 @@ body {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+/* Section Testimonial Carousel Media queries*/
+@media all and (min-width: 900px) {
+  .carousel-item p {
+    width: 50% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
