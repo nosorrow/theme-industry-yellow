@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
-body {
-  font-family: "Hind", "Helvetica", sans-serif;
-}
-
 /* Section Hero */
 #hero {
   padding-top: 1rem !important;
@@ -62,6 +58,10 @@ a.nav-link {
   color: #fff;
   background-color: #d1b815;
   border-color: #d7be15;
+}
+
+body {
+  font-family: "Hind", "Helvetica", sans-serif;
 }
 
 /* Sections */
