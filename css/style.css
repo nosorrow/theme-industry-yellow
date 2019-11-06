@@ -5,7 +5,7 @@
 }
 
 .byt-top-bgr {
-  background: url("../img/hero.jpg") no-repeat fixed;
+  background: url("../img/hero.png") no-repeat fixed;
   margin: 0;
   min-height: 600px;
   background-size: cover;
@@ -19,6 +19,7 @@
 .byt-top-contacts .nav-item {
   color: white;
   letter-spacing: -0.5px;
+  font-size: 0.85rem;
 }
 
 .byt-hero-content {
@@ -35,8 +36,13 @@
 }
 
 /* Navbar styling */
-.navbar-brand {
-  width: 15vw;
+.navbar {
+  padding: 1rem 1rem;
+}
+
+.navbar-brand img {
+  width: 10vw;
+  height: auto;
 }
 
 a.nav-link {
@@ -65,6 +71,44 @@ a.nav-link {
 }
 
 /* Media queryes */
+@media screen and (max-width: 480px) {
+  .byt-top-bgr {
+    background: url("../img/hero-mobile.png") 30% 0 no-repeat fixed;
+    margin: 0;
+    min-height: 400px;
+    background-size: cover;
+    border-radius: 0 !important;
+  }
+
+  #top-contacts {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .byt-hero-content {
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  .byt-hero-content h1 {
+    font-size: 3em !important;
+    font-weight: bolder;
+  }
+  .byt-hero-content h1 span {
+    color: #f5d109;
+  }
+  .byt-hero-content h3 {
+    font-size: 1.5rem;
+  }
+}
 body {
   font-family: "Hind", "Helvetica", sans-serif;
 }
