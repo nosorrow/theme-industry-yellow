@@ -5,7 +5,7 @@
 }
 
 .byt-top-bgr {
-  background: url("../img/hero.jpg") 50% 0 no-repeat fixed;
+  background: url("../img/hero.jpg") no-repeat fixed;
   margin: 0;
   min-height: 600px;
   background-size: cover;
@@ -35,6 +35,10 @@
 }
 
 /* Navbar styling */
+.navbar-brand {
+  width: 15vw;
+}
+
 a.nav-link {
   letter-spacing: -1px;
 }
@@ -60,6 +64,7 @@ a.nav-link {
   border-color: #d7be15;
 }
 
+/* Media queryes */
 body {
   font-family: "Hind", "Helvetica", sans-serif;
 }
