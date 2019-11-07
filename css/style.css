@@ -47,7 +47,7 @@
 }
 
 .navbar-brand img {
-  width: 10vw;
+  width: 100%;
   height: auto;
 }
 
@@ -63,21 +63,8 @@ a.nav-link {
   border-bottom: 3px solid #f5d109;
 }
 
-/* Button Yellow */
-.byt-btn-yellow {
-  color: #fff;
-  background-color: #f5d109;
-  border-color: #d7be15;
-}
-
-.byt-btn-yellow:hover {
-  color: #fff;
-  background-color: #d1b815;
-  border-color: #d7be15;
-}
-
-/* Hero Media queries for mobile devices */
-@media screen and (max-width: 480px) {
+/* Hero Media queries for Extra Small mobile devices */
+@media screen and (max-width: 576px) {
   .byt-top-bgr {
     background: url("../img/hero-mobile.png") 30% 0 no-repeat fixed;
     margin: 0;
@@ -95,8 +82,9 @@ a.nav-link {
   }
 
   .navbar-brand img {
-    width: 30vw;
+    max-width: 30vw;
     height: auto;
+    display: inline-block;
   }
 
   .byt-hero-content {
@@ -122,7 +110,7 @@ body {
   font-family: "Hind", "Helvetica", sans-serif;
 }
 
-/* Sections */
+/* I. Sections */
 .byt-sect-mb {
   margin-bottom: 90px !important;
 }
@@ -176,8 +164,7 @@ body {
   border-radius: 50%;
 }
 
-/* II. Section services */
-/* Service image label */
+/* 1. Section services */
 .byt-service-label {
   position: absolute;
   padding: 8px;
@@ -219,6 +206,7 @@ body {
   font-weight: bolder;
 }
 
+/* 2. Section Projects */
 .byt-project-text {
   display: inline-block;
   transition: all 0.4s ease-in;
@@ -250,6 +238,23 @@ body {
   font-size: 1.8rem;
 }
 
+/* 3. Section About */
+.byt-sect-about {
+  background-color: #f7f9fa;
+}
+.byt-sect-about .byt-sect-title:after {
+  margin: 0;
+}
+.byt-sect-about h3 {
+  max-width: 50%;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.byt-sect-about p {
+  color: #7e7e7e;
+}
+
 /* 1. Image hover Effects */
 .byt-img-container {
   position: relative;
@@ -267,7 +272,7 @@ body {
   border: none;
 }
 
-.byt-image-hover {
+.byt-img-hover {
   opacity: 1;
   filter: alpha(opacity=100);
   transition: all 0.4s ease-in;
@@ -288,12 +293,12 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-.byt-img-container:hover .byt-image-hover {
+.byt-img-container:hover .byt-img-hover {
   opacity: 0.1;
   filter: alpha(opacity=10);
 }
 
-.byt-project-img-container:hover .byt-image-hover {
+.byt-project-img-container:hover .byt-img-hover {
   opacity: 0.3;
   filter: alpha(opacity=30);
   -webkit-transform: scale(1.25);
@@ -320,10 +325,45 @@ body {
   filter: alpha(opacity=100);
 }
 
+/* Button Yellow */
+.byt-btn-yellow {
+  color: #fff;
+  background-color: #f5d109;
+  border-color: #f5d109;
+}
+
+.byt-btn-yellow:hover {
+  color: #fff;
+  background-color: #d1b815;
+  border-color: #d1b815;
+}
+
 /* Section Testimonial Carousel Media queries*/
 @media all and (min-width: 900px) {
   .carousel-item p {
     width: 50% !important;
+  }
+}
+/* Section About Company Media queries*/
+@media all and (max-width: 576px) {
+  .byt-sect-about .byt-sect-title:after {
+    margin: 0 auto;
+  }
+  .byt-sect-about h3 {
+    max-width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  img {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .byt-sectabout-img {
+    padding: 0;
   }
 }
 

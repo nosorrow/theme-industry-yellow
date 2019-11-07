@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
 $theme-yellow: #f5d109;
+$theme-yellow-dark: #d1b815;
+$theme-gey: #676767;
+$theme-grey-light: #7e7e7e;
+$theme-white-dark: #f7f9fa;
+
+$sect-about-p-color: $theme-grey-light;
 $btn-yellow-bgr: $theme-yellow;
-$btn-yellow-border: #d7be15;
-$btn-yellow-bgr-hover: #d1b815;
+$btn-yellow-bgr-hover: $theme-yellow-dark;
 
 // Fonts
 $font-family: 'Hind', 'Helvetica', sans-serif;
-$font-grey: #676767;
+$font-grey: $theme-gey;

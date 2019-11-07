@@ -3,7 +3,7 @@
 body {
   font-family: $font-family;
 }
-/* Sections */
+/* I. Sections */
 .byt-sect-mb {
   margin-bottom: 90px !important;
 }
@@ -60,9 +60,7 @@ body {
   border-radius: 50%;
 }
 
-/* II. Section services */
-
-/* Service image label */
+/* 1. Section services */
 
 .byt-service-label {
   position: absolute;
@@ -111,6 +109,7 @@ body {
 
   }
 }
+/* 2. Section Projects */
 
 .byt-project-text {
   display: inline-block;
@@ -148,6 +147,23 @@ body {
   }
 }
 
+/* 3. Section About */
+.byt-sect-about {
+  background-color: $theme-white-dark;
+  .byt-sect-title:after {
+    margin: 0;
+  }
+  h3 {
+    max-width: 50%;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+  p {
+    color: $sect-about-p-color;
+  }
+}
+
 /* 1. Image hover Effects */
 
 .byt-img-container {
@@ -166,7 +182,7 @@ body {
   border: none;
 }
 
-.byt-image-hover {
+.byt-img-hover {
   opacity: 1;
   filter: alpha(opacity=100);
   transition: all 0.4s ease-in;
@@ -187,14 +203,14 @@ body {
   -ms-transform: translate(-50%, -50%)
 }
 
-.byt-img-container:hover .byt-image-hover {
+.byt-img-container:hover .byt-img-hover {
   opacity: 0.1;
   filter: alpha(opacity=10);
 }
 
 .byt-project-img-container:hover {
 
-  .byt-image-hover {
+  .byt-img-hover {
     opacity: 0.3;
     filter: alpha(opacity=30);
     -webkit-transform: scale(1.25);
@@ -228,6 +244,21 @@ body {
   }
 }
 
+
+/* Button Yellow */
+
+.byt-btn-yellow {
+  color: #fff;
+  background-color: $btn-yellow-bgr;
+  border-color: $btn-yellow-bgr;
+}
+
+.byt-btn-yellow:hover {
+  color: #fff;
+  background-color: $btn-yellow-bgr-hover;
+  border-color: $btn-yellow-bgr-hover;
+}
+
 /* Section Testimonial Carousel Media queries*/
 @media all and (min-width: 900px) {
 
@@ -238,4 +269,28 @@ body {
     }
   }
 
+}
+
+/* Section About Company Media queries*/
+
+@media all and (max-width: 576px) {
+  .byt-sect-about {
+    .byt-sect-title:after {
+      margin: 0 auto;
+    }
+    h3 {
+      max-width: 100%;
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+  img {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .byt-sectabout-img {
+    padding: 0;
+  }
 }
