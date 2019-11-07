@@ -338,6 +338,7 @@ body {
   border-color: #d1b815;
 }
 
+/* ===== Media queries ===== */
 /* Section Testimonial Carousel Media queries*/
 @media all and (min-width: 900px) {
   .carousel-item p {
