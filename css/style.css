@@ -302,8 +302,9 @@ body {
 /* Section Contact us */
 .byt-sect-contacts {
   background: url("../img/contact-bgr.png") no-repeat;
-  height: 450px;
+  min-height: 450px;
   background-size: cover;
+  /* Form formating */
 }
 .byt-sect-contacts h3.byt-sect-title {
   color: #ffffff;
@@ -311,6 +312,24 @@ body {
 }
 .byt-sect-contacts h3.byt-sect-title:after {
   margin: 0;
+}
+.byt-sect-contacts input:not([type=submit]),
+.byt-sect-contacts textarea {
+  background-color: #304555;
+  border: none;
+  padding: 25px;
+  color: #fff;
+}
+.byt-sect-contacts ::-webkit-input-placeholder {
+  /* Edge */
+  color: #7e7e7e;
+}
+.byt-sect-contacts :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #7e7e7e;
+}
+.byt-sect-contacts ::placeholder {
+  color: #7e7e7e;
 }
 
 .contact-list {

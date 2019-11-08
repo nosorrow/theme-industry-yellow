@@ -213,7 +213,7 @@ body {
 /* Section Contact us */
 .byt-sect-contacts {
   background: url("../img/contact-bgr.png") no-repeat;
-  height: 450px;
+  min-height: 450px;
   background-size: cover;
 
   h3.byt-sect-title {
@@ -224,7 +224,26 @@ body {
   h3.byt-sect-title:after {
     margin: 0;
   }
+  /* Form formating */
+  input:not([type=submit]),
+  textarea {
+    background-color: $theme-blue-grey;
+    border: none;
+    padding: 25px;
+    color: #fff;
+  }
 
+  ::-webkit-input-placeholder { /* Edge */
+    color: $theme-grey-light;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $theme-grey-light;
+  }
+
+  ::placeholder {
+    color: $theme-grey-light;
+  }
 }
 
 .contact-list {
