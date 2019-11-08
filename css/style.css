@@ -255,7 +255,77 @@ body {
   color: #7e7e7e;
 }
 
-/* 1. Image hover Effects */
+/* 4. Section Latest Nes */
+.byt-cart h6 {
+  color: #f5d109;
+  font-weight: 500;
+}
+.byt-cart i.fas {
+  font-size: 0.8em;
+}
+.byt-cart h3 {
+  font-weight: 600;
+}
+.byt-cart p {
+  color: #7e7e7e;
+}
+.byt-cart a,
+.byt-cart a:hover,
+.byt-cart a:visited,
+.byt-cart a span,
+.byt-cart a:hover span,
+.byt-cart a:focus span {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.byt-cart a {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.byt-cart a:hover {
+  color: #f5d109;
+}
+.byt-cart a:hover span.byt-rarr {
+  margin-left: 0.5rem !important;
+  color: #f5d109;
+}
+
+.byt-card-title {
+  letter-spacing: -0.5;
+}
+
+.byt-divider {
+  margin: 0 6px 0 8px;
+}
+
+/* Section Contact us */
+.byt-sect-contacts {
+  background: url("../img/contact-bgr.png") no-repeat;
+  height: 450px;
+  background-size: cover;
+}
+.byt-sect-contacts h3.byt-sect-title {
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+.byt-sect-contacts h3.byt-sect-title:after {
+  margin: 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.contact-list li span {
+  color: #f5d109;
+}
+
+/* Image hover Effects */
 .byt-img-container {
   position: relative;
   background-color: #f5d109;
