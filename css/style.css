@@ -464,11 +464,11 @@ footer .byt-footer ::placeholder {
 }
 
 .byt-card-news:hover .byt-img-hover {
-  -webkit-transform: scale(1.4) rotate(-15deg);
-  -moz-transform: scale(1.4) rotate(-15deg);
-  -ms-transform: scale(1.4) rotate(-15deg);
-  -o-transform: scale(1.4) rotate(-15deg);
-  transform: scale(1.4) rotate(-15deg);
+  -webkit-transform: scale(1.25) rotate(-10deg);
+  -moz-transform: scale(1.25) rotate(-10deg);
+  -ms-transform: scale(1.25) rotate(-10deg);
+  -o-transform: scale(1.25) rotate(-10deg);
+  transform: scale(1.25) rotate(-10deg);
 }
 
 .byt-img-container:hover .middle,
