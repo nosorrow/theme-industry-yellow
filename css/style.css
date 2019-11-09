@@ -110,7 +110,7 @@ body {
   font-family: "Hind", "Helvetica", sans-serif;
 }
 
-/* I. Sections */
+/* = I. Sections = */
 .byt-sect-mb {
   margin-bottom: 90px !important;
 }
@@ -125,6 +125,18 @@ body {
   margin: 0 auto;
   content: " ";
   width: 100px;
+}
+
+.byt-sect-list {
+  list-style: none;
+  padding: 0;
+}
+.byt-sect-list li {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.byt-sect-list li span {
+  color: #f5d109;
 }
 
 .byt-sect-content-p {
@@ -164,7 +176,7 @@ body {
   border-radius: 50%;
 }
 
-/* 1. Section services */
+/* = 1. Section services = */
 .byt-service-label {
   position: absolute;
   padding: 8px;
@@ -206,7 +218,7 @@ body {
   font-weight: bolder;
 }
 
-/* 2. Section Projects */
+/* = 2. Section Projects = */
 .byt-project-text {
   display: inline-block;
   transition: all 0.4s ease-in;
@@ -238,7 +250,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* 3. Section About */
+/* = 3. Section About = */
 .byt-sect-about {
   background-color: #f7f9fa;
 }
@@ -255,7 +267,7 @@ body {
   color: #7e7e7e;
 }
 
-/* 4. Section Latest Nes */
+/* = 4. Section Latest Nes = */
 .byt-cart h6 {
   color: #f5d109;
   font-weight: 500;
@@ -299,12 +311,12 @@ body {
   margin: 0 6px 0 8px;
 }
 
-/* Section Contact us */
+/* = Section Contact us = */
 .byt-sect-contacts {
   background: url("../img/contact-bgr.png") no-repeat;
   min-height: 450px;
   background-size: cover;
-  /* Form formating */
+  /* = Form formating = */
 }
 .byt-sect-contacts h3.byt-sect-title {
   color: #ffffff;
@@ -325,11 +337,11 @@ body {
   color: #fff;
 }
 .byt-sect-contacts ::-webkit-input-placeholder {
-  /* Edge */
+  /* = Edge = */
   color: #7e7e7e;
 }
 .byt-sect-contacts :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+  /* = Internet Explorer 10-11 = */
   color: #7e7e7e;
 }
 .byt-sect-contacts ::placeholder {
@@ -344,19 +356,45 @@ body {
   filter: grayscale(80%);
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
+/* = Footer  = */
+footer .byt-footer {
+  min-height: 300px;
+  background-color: #212c33;
+  margin: 0;
 }
-.contact-list li {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
+footer .byt-footer .byt-sect-title:after {
+  margin: 0;
+  max-width: 40px;
 }
-.contact-list li span {
-  color: #f5d109;
+footer .byt-footer h2 {
+  font-size: 0.95em;
+  color: #f7f9fa;
+}
+footer .byt-footer a {
+  color: #C2C4C8;
+}
+footer .byt-footer input:not([type=submit]) {
+  background-color: #304555;
+  border: none;
+  color: #fff;
+}
+footer .byt-footer ::-webkit-input-placeholder {
+  /* = Edge = */
+  color: #7e7e7e;
+}
+footer .byt-footer :-ms-input-placeholder {
+  /* = Internet Explorer 10-11 = */
+  color: #7e7e7e;
+}
+footer .byt-footer ::placeholder {
+  color: #7e7e7e;
 }
 
-/* Image hover Effects */
+.byt-footer-content p {
+  color: #C2C4C8;
+}
+
+/* = Image hover Effects = */
 .byt-img-container {
   position: relative;
   background-color: #f5d109;
@@ -426,7 +464,7 @@ body {
   filter: alpha(opacity=100);
 }
 
-/* Button Yellow */
+/* = Button Yellow = */
 .byt-btn-yellow {
   color: #fff;
   background-color: #f5d109;
@@ -439,14 +477,14 @@ body {
   border-color: #d1b815;
 }
 
-/* ===== Media queries ===== */
-/* Section Testimonial Carousel Media queries*/
+/* = ===== Media queries ===== = */
+/* = Section Testimonial Carousel Media queries= */
 @media all and (min-width: 900px) {
   .carousel-item p {
     width: 50% !important;
   }
 }
-/* Section About Company Media queries*/
+/* = Section About Company Media queries = */
 @media all and (max-width: 576px) {
   .byt-sect-about .byt-sect-title:after {
     margin: 0 auto;
