@@ -35,6 +35,7 @@ body {
     }
   }
 }
+
 .byt-sect-content-p {
   color: $font-grey;
   font-size: 1.3rem;
@@ -288,23 +289,34 @@ body {
   -o-filter: grayscale(80%);
   filter: grayscale(80%);
 }
+
 /* = Footer  = */
 
 footer .byt-footer {
   min-height: 300px;
   background-color: $theme-blue-dark;
   margin: 0;
+
   .byt-sect-title:after {
     margin: 0;
     max-width: 40px;
 
   }
+
   h2 {
     font-size: 0.95em;
     color: $theme-white-dark;
   }
-  a {
+
+  p, a {
     color: $theme-blue-grey-extralight;
+    font-weight: lighter;
+  }
+
+  a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
   }
 
   input:not([type=submit]) {
@@ -325,12 +337,18 @@ footer .byt-footer {
     color: $theme-grey-light;
   }
 }
-.byt-footer-content {
-  p {
-    color: $theme-blue-grey-extralight;
 
+.byt-footer-bottom {
+  min-height: 40px;
+  background-color: $theme-blue-darker;
+
+
+  span, p {
+    color: $theme-blue-grey-light;
+    font-size: 0.9rem;
   }
 }
+
 /* = Image hover Effects = */
 
 .byt-img-container {

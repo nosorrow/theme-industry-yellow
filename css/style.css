@@ -370,8 +370,14 @@ footer .byt-footer h2 {
   font-size: 0.95em;
   color: #f7f9fa;
 }
-footer .byt-footer a {
+footer .byt-footer p, footer .byt-footer a {
   color: #C2C4C8;
+  font-weight: lighter;
+}
+footer .byt-footer a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 footer .byt-footer input:not([type=submit]) {
   background-color: #304555;
@@ -390,8 +396,13 @@ footer .byt-footer ::placeholder {
   color: #7e7e7e;
 }
 
-.byt-footer-content p {
-  color: #C2C4C8;
+.byt-footer-bottom {
+  min-height: 40px;
+  background-color: #151c21;
+}
+.byt-footer-bottom span, .byt-footer-bottom p {
+  color: #6087a5;
+  font-size: 0.9rem;
 }
 
 /* = Image hover Effects = */
