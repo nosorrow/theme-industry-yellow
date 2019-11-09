@@ -313,6 +313,10 @@ body {
 .byt-sect-contacts h3.byt-sect-title:after {
   margin: 0;
 }
+.byt-sect-contacts address {
+  border: 1px solid #304555;
+  padding: 15px;
+}
 .byt-sect-contacts input:not([type=submit]),
 .byt-sect-contacts textarea {
   background-color: #304555;
@@ -330,6 +334,14 @@ body {
 }
 .byt-sect-contacts ::placeholder {
   color: #7e7e7e;
+}
+
+#map {
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .contact-list {

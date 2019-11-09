@@ -1,8 +1,10 @@
 @import 'partials/variables';
 @import 'partials/hero-section';
+
 body {
   font-family: $font-family;
 }
+
 /* I. Sections */
 .byt-sect-mb {
   margin-bottom: 90px !important;
@@ -109,6 +111,7 @@ body {
 
   }
 }
+
 /* 2. Section Projects */
 
 .byt-project-text {
@@ -150,15 +153,18 @@ body {
 /* 3. Section About */
 .byt-sect-about {
   background-color: $theme-white-dark;
+
   .byt-sect-title:after {
     margin: 0;
   }
+
   h3 {
     max-width: 50%;
     font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 30px;
   }
+
   p {
     color: $theme-grey-light;
   }
@@ -167,16 +173,19 @@ body {
 /* 4. Section Latest Nes */
 .byt-cart {
   h6 {
-    color:  $theme-yellow;
+    color: $theme-yellow;
     font-weight: 500;
   }
+
   i.fas {
     font-size: 0.8em;
   }
+
   h3 {
     font-weight: 600;
 
   }
+
   p {
     color: $theme-grey-light;
   }
@@ -190,26 +199,32 @@ body {
     text-decoration: none;
     transition: all 0.2s ease-out;
   }
+
   a {
     color: #000;
     font-weight: bolder;
     text-decoration: none;
   }
+
   a:hover {
     color: $theme-yellow;
 
   }
+
   a:hover span.byt-rarr {
-    margin-left:0.5rem !important;
+    margin-left: 0.5rem !important;
     color: $theme-yellow;
   }
 }
+
 .byt-card-title {
   letter-spacing: -0.5;
 }
+
 .byt-divider {
   margin: 0 6px 0 8px;
 }
+
 /* Section Contact us */
 .byt-sect-contacts {
   background: url("../img/contact-bgr.png") no-repeat;
@@ -224,7 +239,13 @@ body {
   h3.byt-sect-title:after {
     margin: 0;
   }
+
+  address{
+    border: 1px solid $theme-blue-grey;
+    padding: 15px;
+  }
   /* Form formating */
+
   input:not([type=submit]),
   textarea {
     background-color: $theme-blue-grey;
@@ -244,14 +265,25 @@ body {
   ::placeholder {
     color: $theme-grey-light;
   }
+
+}
+
+#map {
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .contact-list {
   list-style: none;
   padding: 0;
+
   li {
     color: #ffffff;
     margin-bottom: 0.5rem;
+
     span {
       color: $theme-yellow;
     }
@@ -372,6 +404,7 @@ body {
     .byt-sect-title:after {
       margin: 0 auto;
     }
+
     h3 {
       max-width: 100%;
       font-size: 2rem;
