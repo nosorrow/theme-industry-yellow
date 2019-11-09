@@ -184,7 +184,7 @@ body {
   }
 }
 
-/* = 4. Section Latest Nes = */
+/* = 4. Section Latest News = */
 .byt-cart {
   h6 {
     color: $theme-yellow;
@@ -240,6 +240,7 @@ body {
 }
 
 /* = Section Contact us = */
+
 .byt-sect-contacts {
   background: url("../img/contact-bgr.png") no-repeat;
   min-height: 450px;
@@ -260,6 +261,7 @@ body {
   }
 
   /* = Form formating = */
+
   input:not([type=submit]),
   textarea {
     background-color: $theme-blue-grey;
@@ -367,6 +369,12 @@ footer .byt-footer {
   border: none;
 }
 
+.byt-news-img-container {
+  overflow: hidden;
+  max-height: 200px;
+}
+
+
 .byt-img-hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -403,6 +411,18 @@ footer .byt-footer {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.25);
+  }
+}
+
+.byt-card-news:hover {
+
+  .byt-img-hover {
+    -webkit-transform: scale(1.4) rotate(-15deg);
+    -moz-transform: scale(1.4) rotate(-15deg);
+    -ms-transform: scale(1.4) rotate(-15deg);
+    -o-transform: scale(1.4) rotate(-15deg);
+    transform: scale(1.4) rotate(-15deg);
+
   }
 }
 

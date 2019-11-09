@@ -267,7 +267,7 @@ body {
   color: #7e7e7e;
 }
 
-/* = 4. Section Latest Nes = */
+/* = 4. Section Latest News = */
 .byt-cart h6 {
   color: #f5d109;
   font-weight: 500;
@@ -422,6 +422,11 @@ footer .byt-footer ::placeholder {
   border: none;
 }
 
+.byt-news-img-container {
+  overflow: hidden;
+  max-height: 200px;
+}
+
 .byt-img-hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -456,6 +461,14 @@ footer .byt-footer ::placeholder {
   -ms-transform: scale(1.25);
   -o-transform: scale(1.25);
   transform: scale(1.25);
+}
+
+.byt-card-news:hover .byt-img-hover {
+  -webkit-transform: scale(1.4) rotate(-15deg);
+  -moz-transform: scale(1.4) rotate(-15deg);
+  -ms-transform: scale(1.4) rotate(-15deg);
+  -o-transform: scale(1.4) rotate(-15deg);
+  transform: scale(1.4) rotate(-15deg);
 }
 
 .byt-img-container:hover .middle,
