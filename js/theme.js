@@ -1,7 +1,9 @@
 var app = {
-    select: '',
-    equalize: function () {
-        const selector = document.querySelectorAll(this.select);
+    equalize: function (elements) {
+        elements.element.map(this.equizer);
+    },
+    equizer: function (select) {
+        const selector = document.querySelectorAll(select);
         var Yheight = 0;
         selector.forEach(function (e) {
             let selectorHeight = e.offsetHeight;
