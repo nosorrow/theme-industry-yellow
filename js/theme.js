@@ -1,4 +1,5 @@
 var app = {
+    // All selected elements have some height
     equalize: function (elements) {
         elements.element.map(this.equizer);
     },
@@ -15,6 +16,23 @@ var app = {
         })
     }
 };
+
+const topContacts = document.getElementById('top-contacts');
+const header = document.getElementById('hero');
+const headerHeight = header.clientHeight;
+const mainmenu = document.getElementById('main-menu')
+window.addEventListener('scroll', function (e) {
+
+    if(window.scrollY > 50){
+        topContacts.style = "display:none";
+        mainmenu.classList.add("fixed-top", "changednav");
+    } else {
+        topContacts.style = "display:block";
+        mainmenu.classList.remove("fixed-top", "changednav");
+    }
+
+});
+
 
 function equalize(selector) {
     let height = 0;
