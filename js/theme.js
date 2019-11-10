@@ -20,15 +20,16 @@ var app = {
 const topContacts = document.getElementById('top-contacts');
 const header = document.getElementById('hero');
 const headerHeight = header.clientHeight;
-const mainmenu = document.getElementById('main-menu')
+const mainmenu = document.getElementById('main-menu');
+
 window.addEventListener('scroll', function (e) {
 
-    if(window.scrollY > 50){
-        topContacts.style = "display:none";
-        mainmenu.classList.add("fixed-top", "changednav");
+    if(window.scrollY > header.clientHeight + 45){
+        topContacts.classList.add("change-top-cont");
+        mainmenu.classList.add("fixed-top", "changednav", "slideInDown", "animated");
     } else {
-        topContacts.style = "display:block";
-        mainmenu.classList.remove("fixed-top", "changednav");
+        topContacts.classList.remove("change-top-cont");
+        mainmenu.classList.remove("fixed-top", "changednav", "slideInDown", "animated");
     }
 
 });

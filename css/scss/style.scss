@@ -1,5 +1,6 @@
 @import 'partials/variables';
 @import 'partials/hero-section';
+@import 'partials/animate';
 
 body {
   font-family: $font-family;
@@ -413,6 +414,10 @@ footer .byt-footer {
     transform: scale(1.25);
   }
 }
+.byt-card-news{
+  box-shadow: 0 0 8px #e2e2e2 !important;
+  border: none;
+}
 
 .byt-card-news:hover {
 
@@ -500,3 +505,4 @@ footer .byt-footer {
     padding: 0;
   }
 }
+
