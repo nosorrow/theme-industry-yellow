@@ -47,7 +47,7 @@ $(window).on("load resize", function() {
             function() {
                 const $this = $(this);
                 $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
+                $this.find($dropdownToggle).attr("aria-expanded", "false");
                // $this.find($dropdownMenu).addClass(showClass).fadeIn('slow');
                 $this.find($dropdownMenu).fadeIn();
 
