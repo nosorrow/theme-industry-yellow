@@ -1,4 +1,5 @@
 var app = {
+
     // All selected elements have some height
     equalize: function (elements) {
         elements.element.map(this.equizer);
@@ -13,10 +14,11 @@ var app = {
 
             }
             e.style.height = Yheight + "px";
-        })
+        });
     }
 };
 
+/* Fix top navbar on scrolldown */
 const topContacts = document.getElementById('top-contacts');
 const header = document.getElementById('hero');
 const headerHeight = header.clientHeight;
@@ -34,7 +36,36 @@ window.addEventListener('scroll', function (e) {
 
 });
 
+/* Navbar hover */
+const $dropdown = $(".dropdown");
+const $dropdownToggle = $(".dropdown-toggle");
+const $dropdownMenu = $(".dropdown-menu");
+const showClass = "show";
+$(window).on("load resize", function() {
+    if (this.matchMedia("(min-width: 768px)").matches) {
+        $dropdown.hover(
+            function() {
+                const $this = $(this);
+                $this.addClass(showClass);
+                $this.find($dropdownToggle).attr("aria-expanded", "true");
+               // $this.find($dropdownMenu).addClass(showClass).fadeIn('slow');
+                $this.find($dropdownMenu).fadeIn();
 
+            },
+            function() {
+                const $this = $(this);
+                $this.removeClass(showClass);
+                $this.find($dropdownToggle).attr("aria-expanded", "false");
+                // $this.find($dropdownMenu).removeClass(showClass);
+                $this.find($dropdownMenu).fadeOut(10);
+            }
+        );
+    } else {
+        $dropdown.off("mouseenter mouseleave");
+    }
+});
+
+// Jquery equal height
 function equalize(selector) {
     let height = 0;
     $(selector).each(function () {

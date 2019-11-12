@@ -4,11 +4,9 @@
   padding-top: 1rem !important;
 }
 
-.byt-top-bgr {
-  background: url("../img/hero.png") no-repeat fixed;
+.byt-hero {
   margin: 0;
   min-height: 600px;
-  background-size: cover;
   border-radius: 0 !important;
 }
 
@@ -63,6 +61,38 @@ a.nav-link {
   border-bottom: 3px solid #f5d109;
 }
 
+/* Hover Drop down menu */
+.navbar .nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+#main-menu li.dropdown {
+  border-bottom: none !important;
+}
+
+#main-menu a.dropdown-item:hover {
+  background-color: #f5d109;
+  color: #f7f9fa;
+  transition: all 0.3s;
+}
+
+/*
+#main-menu .dropdown-menu.show a{
+  transition: all 1s ease-in-out !important;
+}*/
+/* Change Navbar on scroll */
 .changednav {
   padding: 0.3rem 1rem !important;
   box-shadow: 1px 1px 8px #ccc !important;
