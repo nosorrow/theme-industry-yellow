@@ -117,10 +117,6 @@ div.submenu:hover .dropdown-submenu {
   transform: rotate(-90deg);
 }
 
-.dropdown-submenu a:hover #navbarDropdown2 {
-  color: red !important;
-}
-
 /* Change Navbar on scroll */
 .changednav {
   padding: 0.3rem 1rem !important;
