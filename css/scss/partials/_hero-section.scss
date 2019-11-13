@@ -101,10 +101,15 @@ a.nav-link {
   transition: all 0.3s;
 
 }
-/*
-#main-menu .dropdown-menu.show a{
-  transition: all 1s ease-in-out !important;
-}*/
+
+// Submenu
+ul.submenu {
+  list-style: none;
+}
+.submenu .dropdown-menu {
+  top:0;
+  left: 100%
+}
 
 /* Change Navbar on scroll */
 .changednav {
