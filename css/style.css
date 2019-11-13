@@ -94,13 +94,25 @@ a.nav-link {
   transition: all 0.3s;
 }
 
-ul.submenu {
-  list-style: none;
+.navbar-nav {
+  transition: all 1s;
 }
 
-.submenu .dropdown-menu {
-  top: 0;
+/*.navbar-nav li:hover > .dropdown-menu:not(.dropdown-submenu),
+div.submenu:hover .dropdown-submenu {
+  display: block;
+  opacity: 1;
+}*/
+.submenu {
+  position: relative;
+}
+
+.submenu > div.dropdown-menu {
+  position: absolute;
+  top: 0 !important;
   left: 100%;
+  opacity: 0;
+  transition: opacity 3s ease-out;
 }
 
 /* Change Navbar on scroll */
