@@ -48,6 +48,10 @@
 }
 
 /* Navbar styling */
+.bg-white {
+  background-color: #fff !important;
+}
+
 .navbar {
   padding: 1rem 1.5rem;
 }
@@ -84,6 +88,7 @@ a.nav-link {
 
 .dropdown-menu {
   margin-top: 0;
+  border: none;
 }
 
 #main-menu li.dropdown {
