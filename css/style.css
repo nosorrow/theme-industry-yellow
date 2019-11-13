@@ -94,10 +94,6 @@ a.nav-link {
   transition: all 0.3s;
 }
 
-.navbar-nav {
-  transition: all 1s;
-}
-
 /*
 .navbar-nav li:hover > .dropdown-menu:not(.dropdown-submenu),
 div.submenu:hover .dropdown-submenu {
@@ -119,6 +115,10 @@ div.submenu:hover .dropdown-submenu {
 .submenu a.dropdown-item:hover:after {
   text-decoration: underline;
   transform: rotate(-90deg);
+}
+
+.dropdown-submenu a:hover #navbarDropdown2 {
+  color: red !important;
 }
 
 /* Change Navbar on scroll */
