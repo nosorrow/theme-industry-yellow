@@ -37,21 +37,21 @@ window.addEventListener('scroll', function (e) {
 });
 
 /* Navbar hover */
-const $dropdown = $(".navbar-nav li > .dropdown-menu");
+const $dropdown = $(".navbar-nav li");
+const $submenu  = $(".dropdown-submenu");
 const $dropdownToggle = $(".dropdown-toggle");
-const $dropdownMenu = $(".dropdown-menu");
+const $dropdownMenu = $(".dropdown-menu:not(.dropdown-submenu)");
 const showClass = "show";
-/*
+
 $(window).on("load resize", function() {
     if (this.matchMedia("(min-width: 768px)").matches) {
         $dropdown.hover(
             function() {
                 const $this = $(this);
                 $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
+                $this.find($dropdownToggle).attr("aria-expanded", "true");
                // $this.find($dropdownMenu).addClass(showClass).fadeIn('slow');
                 $this.find($dropdownMenu).fadeIn();
-
             },
             function() {
                 const $this = $(this);
@@ -61,11 +61,20 @@ $(window).on("load resize", function() {
                 $this.find($dropdownMenu).fadeOut(10);
             }
         );
+
+        $("div.submenu").hover(
+            function() {
+                $(this).find($submenu).fadeIn()
+            },
+            function() {
+                $(this).find($submenu).fadeOut();
+            }
+        )
     } else {
         $dropdown.off("mouseenter mouseleave");
     }
 });
-*/
+
 
 // Jquery equal height
 function equalize(selector) {

@@ -108,11 +108,13 @@ a.nav-link {
 
 }
 
-/*.navbar-nav li:hover > .dropdown-menu:not(.dropdown-submenu),
+/*
+.navbar-nav li:hover > .dropdown-menu:not(.dropdown-submenu),
 div.submenu:hover .dropdown-submenu {
   display: block;
   opacity: 1;
-}*/
+}
+*/
 
 .submenu {
   position: relative;
@@ -122,10 +124,12 @@ div.submenu:hover .dropdown-submenu {
   position: absolute;
   top:0 !important;
   left: 100%;
-  opacity: 0;
-  transition: opacity 3s ease-out;
 }
-
+/* rotate caret on hover */
+.submenu a.dropdown-item:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
 /* Change Navbar on scroll */
 .changednav {
   padding: 0.3rem 1rem !important;
