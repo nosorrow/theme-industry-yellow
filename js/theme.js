@@ -20,11 +20,9 @@ var theme = {
         '.carousel .carousel-item'
     ],
     settings: function (options) {
-        console.log(this.navbarFixed);
         this.dropdownHover = options.dropdownHover || this.dropdownHover;
         this.equalize = options.equalize || this.equalize;
         this.navbarFixed = options.navbarFixed || this.navbarFixed;
-        console.log(this.navbarFixed);
         return this;
     },
     run: function () {
@@ -116,7 +114,16 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function () {
     }
 
     var $subMenu = $(this).next(".dropdown-menu");
+    let $submenuCaret = $(".submenu a.dropdown-item");
     $subMenu.toggleClass('show');
+
+    if($subMenu.hasClass('show')){
+        $submenuCaret.addClass('submenu-caret-rotate');
+
+    } else {
+        $submenuCaret.removeClass('submenu-caret-rotate');
+
+    }
 
     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
         $('.dropdown-submenu .show').removeClass("show");
