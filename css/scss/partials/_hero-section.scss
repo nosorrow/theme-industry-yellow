@@ -115,15 +115,17 @@ div.submenu:hover .dropdown-submenu {
   position: relative;
 }
 
-.submenu > div.dropdown-menu {
-  position: absolute;
-  top:0 !important;
-  left: 100%;
-}
-/* rotate caret on hover */
-.submenu a.dropdown-item:hover:after {
-  text-decoration: underline;
-  transform: rotate(-90deg);
+@media screen and (min-width: 576px){
+  .submenu > div.dropdown-menu {
+    position: absolute;
+    top:0 !important;
+    left: 100%;
+  }
+  /* rotate caret on hover */
+  .submenu a.dropdown-item:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+  }
 }
 
 /* Change Navbar on scroll */
@@ -175,6 +177,11 @@ div.submenu:hover .dropdown-submenu {
 
     }
   }
+
+  .dropdown-submenu a.dropdown-item {
+    margin-left: 25px;
+  }
+
   .byt-hero-content {
     padding: 30px 10px;
     text-align: center;
