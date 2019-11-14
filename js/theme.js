@@ -25,7 +25,7 @@ var theme = {
         this.navbarFixed = options.navbarFixed || this.navbarFixed;
         return this;
     },
-    run: function () {
+    set: function () {
         app.equalize(this.equalize);
         app.fixNavbar(this.navbarFixed);
         app.onHoverNav(this.dropdownHover)
@@ -117,12 +117,14 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function () {
     let $submenuCaret = $(".submenu a.dropdown-item");
     $subMenu.toggleClass('show');
 
-    if($subMenu.hasClass('show')){
-        $submenuCaret.addClass('submenu-caret-rotate');
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        if ($subMenu.hasClass('show')) {
+            $submenuCaret.addClass('submenu-caret-rotate');
 
-    } else {
-        $submenuCaret.removeClass('submenu-caret-rotate');
+        } else {
+            $submenuCaret.removeClass('submenu-caret-rotate');
 
+        }
     }
 
     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
