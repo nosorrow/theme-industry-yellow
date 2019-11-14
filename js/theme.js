@@ -42,6 +42,7 @@ const $submenu  = $(".dropdown-submenu");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu:not(.dropdown-submenu)");
 const showClass = "show";
+/*
 
 $(window).on("load resize", function() {
     if (this.matchMedia("(min-width: 768px)").matches) {
@@ -74,6 +75,7 @@ $(window).on("load resize", function() {
         $dropdown.off("mouseenter mouseleave");
     }
 });
+*/
 
 
 // Jquery equal height
