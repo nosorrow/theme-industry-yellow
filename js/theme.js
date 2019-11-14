@@ -6,7 +6,7 @@ const mainmenu = document.getElementById('main-menu');
 
 /* Navbar hover */
 const $dropdown = $(".navbar-nav li");
-const $submenu  = $(".dropdown-submenu");
+const $submenu = $(".dropdown-submenu");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu:not(.dropdown-submenu)");
 const showClass = "show";
@@ -54,10 +54,10 @@ const app = {
     },
     // Fix top navbar on scroll
     fixNavbar: function (opt) {
-        if (opt === true){
+        if (opt === true) {
             window.addEventListener('scroll', function (e) {
 
-                if(window.scrollY > header.clientHeight + 45){
+                if (window.scrollY > header.clientHeight + 45) {
                     topContacts.classList.add("change-top-cont");
                     mainmenu.classList.add("fixed-top", "changednav", "slideInDown", "animated");
                 } else {
@@ -69,44 +69,61 @@ const app = {
         }
     },
     // Dropdown hover
-    onHoverNav: function (opt){
-    if (opt === true){
-        $(window).on("load resize", function() {
-            if (this.matchMedia("(min-width: 768px)").matches) {
-                $dropdown.hover(
-                    function() {
-                        const $this = $(this);
-                        $this.addClass(showClass);
-                        $this.find($dropdownToggle).attr("aria-expanded", "true");
-                        // $this.find($dropdownMenu).addClass(showClass).fadeIn('slow');
-                        $this.find($dropdownMenu).fadeIn();
-                    },
-                    function() {
-                        const $this = $(this);
-                        $this.removeClass(showClass);
-                        $this.find($dropdownToggle).attr("aria-expanded", "false");
-                        // $this.find($dropdownMenu).removeClass(showClass);
-                        $this.find($dropdownMenu).fadeOut(10);
-                    }
-                );
+    onHoverNav: function (opt) {
+        if (opt === true) {
+            $(window).on("load resize", function () {
+                if (this.matchMedia("(min-width: 768px)").matches) {
+                    $dropdown.hover(
+                        function () {
+                            const $this = $(this);
+                            $this.addClass(showClass);
+                            $this.find($dropdownToggle).attr("aria-expanded", "true");
+                            // $this.find($dropdownMenu).addClass(showClass);
+                            $this.find($dropdownMenu).fadeIn();
+                        },
+                        function () {
+                            const $this = $(this);
+                            $this.removeClass(showClass);
+                            $this.find($dropdownToggle).attr("aria-expanded", "false");
+                            // $this.find($dropdownMenu).removeClass(showClass);
+                            $this.find($dropdownMenu).fadeOut(10);
+                        }
+                    );
 
-                $("div.submenu").hover(
-                    function() {
-                        $(this).find($submenu).fadeIn()
-                    },
-                    function() {
-                        $(this).find($submenu).fadeOut();
-                    }
-                )
-            } else {
-                $dropdown.off("mouseenter mouseleave");
-            }
-        });
+                    $("div.submenu").hover(
+                        function () {
+                            $(this).find($submenu).fadeIn()
+                        },
+                        function () {
+                            $(this).find($submenu).fadeOut();
+                        }
+                    )
 
+                } else {
+                    $dropdown.off("mouseenter mouseleave");
+
+                }
+            });
+
+        }
     }
-}
 };
 
+// Submenu show onclick
+$('.dropdown-menu a.dropdown-toggle').on('click', function () {
+    if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
+        $('.dropdown-submenu .show').removeClass("show");
+    });
+
+    return false;
+});
 
 // Jquery equal height
 function equalize(selector) {
