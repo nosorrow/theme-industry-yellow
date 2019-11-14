@@ -348,6 +348,8 @@
 					<p class="card-text">
 						Some quick example text to build on the card title and make up the bulk of the card's
 						content.
+						Some quick example text to build on the card title and make up the bulk of the card's
+						content.
 					</p>
 					<a href="#">Go somewhere <span class="byt-rarr">&rarr;</span></a>
 				</div>
@@ -497,9 +499,9 @@
             if (!$(this).next().hasClass('show')) {
                 $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
             }
+
             var $subMenu = $(this).next(".dropdown-menu");
             $subMenu.toggleClass('show');
-
 
             $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
                 $('.dropdown-submenu .show').removeClass("show");
@@ -508,13 +510,16 @@
             return false;
         });
 
-        app.equalize({
-            element: [
+        theme.settings({
+						dropdownHover: false,
+            navbarFixed: false,
+            equalize: [
                 '.byt-card-news',
-                '.carousel .carousel-item'
-            ]
-        });
+                '.carousel .carousel-item6'
+						]
+				}).run();
 
+        console.log(theme.navbarFixed);
         /* Lightslider coniguration */
 
         $("#lightSlider").lightSlider({
