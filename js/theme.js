@@ -113,7 +113,7 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function () {
         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
     }
 
-    var $subMenu = $(this).next(".dropdown-menu");
+    let $subMenu = $(this).next(".dropdown-menu");
     let $submenuCaret = $(".submenu a.dropdown-item");
     $subMenu.toggleClass('show');
 
