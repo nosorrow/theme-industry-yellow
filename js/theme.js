@@ -90,22 +90,11 @@ const app = {
                     $("div.submenu").hover(
                         function () {
                             $(this).find($submenu).fadeIn();
-                            $(this).parent(".submenu").addClass(showClass);
                         },
                         function () {
                             $(this).find($submenu).fadeOut();
                         }
                     );
-                    let $subMenu = $(this).next(".dropdown-menu");
-                    let $submenuCaret = $(".submenu a.dropdown-item");
-
-                    if ($subMenu.hasClass('show')) {
-                        $submenuCaret.addClass('submenu-caret-rotate');
-
-                    } else {
-                        $submenuCaret.removeClass('submenu-caret-rotate');
-
-                    }
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
