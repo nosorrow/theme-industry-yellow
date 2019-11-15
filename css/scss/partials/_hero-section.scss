@@ -118,8 +118,9 @@ div.submenu:hover .dropdown-submenu {
 @media screen and (min-width: 576px){
   .submenu > div.dropdown-menu {
     position: absolute;
-    top:0 !important;
+    top:-8px !important;
     left: 100%;
+    border-radius: 0;
   }
   /* rotate caret on hover */
   .submenu a.dropdown-item:hover:after {

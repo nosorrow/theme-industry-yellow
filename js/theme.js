@@ -3,13 +3,14 @@ const topContacts = document.getElementById('top-contacts');
 const header = document.getElementById('hero');
 const headerHeight = header.clientHeight;
 const mainmenu = document.getElementById('main-menu');
+
 /* Navbar hover */
 const $dropdown = $(".navbar-nav li");
 const $submenu = $(".dropdown-submenu");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu:not(.dropdown-submenu)");
 const showClass = "show";
-// Set theme settings
+
 var theme = {
     // Set default options
     dropdownHover: false,
@@ -90,11 +91,22 @@ const app = {
                     $("div.submenu").hover(
                         function () {
                             $(this).find($submenu).fadeIn();
+                            $(this).parent(".submenu").addClass(showClass);
                         },
                         function () {
                             $(this).find($submenu).fadeOut();
                         }
                     );
+                    let $subMenu = $(this).next(".dropdown-menu");
+                    let $submenuCaret = $(".submenu a.dropdown-item");
+
+                    if ($subMenu.hasClass('show')) {
+                        $submenuCaret.addClass('submenu-caret-rotate');
+
+                    } else {
+                        $submenuCaret.removeClass('submenu-caret-rotate');
+
+                    }
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
@@ -108,20 +120,20 @@ const app = {
 
 // Submenu show onclick
 $('.dropdown-menu a.dropdown-toggle').on('click', function () {
+    let $this = $(this);
     if (!$(this).next().hasClass('show')) {
         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
     }
 
-    let $subMenu = $(this).next(".dropdown-menu");
-    let $submenuCaret = $(".submenu a.dropdown-item");
+    let $subMenu = $(this).next();
     $subMenu.toggleClass('show');
-
+    $("a.dropdown-item.dropdown-toggle.submenu-caret-rotate").removeClass('submenu-caret-rotate');
     if (window.matchMedia("(min-width: 768px)").matches) {
         if ($subMenu.hasClass('show')) {
-            $submenuCaret.addClass('submenu-caret-rotate');
+            $this.addClass('submenu-caret-rotate');
 
         } else {
-            $submenuCaret.removeClass('submenu-caret-rotate');
+            $this.removeClass('submenu-caret-rotate');
 
         }
     }
