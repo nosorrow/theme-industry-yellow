@@ -5,7 +5,7 @@
 }
 
 .byt-hero {
-  background: url("../img/hero.png") center center/cover no-repeat fixed;
+  background: url("../img/hero-3-1.png") center center/cover no-repeat fixed;
   margin: 0;
   min-height: 600px;
   border-radius: 0 !important;
@@ -82,6 +82,12 @@ a.nav-link {
 .dropdown-menu {
   margin-top: 0;
   border: none;
+  width: 220px;
+  border-radius: 0;
+  box-shadow: 0px 0 10px 0 rgba(144, 144, 144, 0.4);
+}
+.dropdown-menu a {
+  padding: 1em 1em;
 }
 
 #main-menu li.dropdown {
@@ -108,7 +114,7 @@ div.submenu:hover .dropdown-submenu {
 @media screen and (min-width: 576px) {
   .submenu > div.dropdown-menu {
     position: absolute;
-    top: -8px !important;
+    top: 0 !important;
     left: 100%;
     border-radius: 0;
   }
@@ -119,7 +125,7 @@ div.submenu:hover .dropdown-submenu {
     transform: rotate(-90deg);
   }
 }
-.submenu-caret-rotate:after {
+.submenu-caret-rotate::after {
   transform: rotate(-90deg) !important;
 }
 
@@ -142,7 +148,7 @@ div.submenu:hover .dropdown-submenu {
 /* Hero Media queries for Extra Small mobile devices */
 @media screen and (max-width: 576px) {
   .byt-hero {
-    background: url("../img/hero-mobile.png");
+    background: url("../img/hero-3-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -157,7 +163,10 @@ div.submenu:hover .dropdown-submenu {
     display: none;
   }
 
-  .navbar {
+  nav.navbar {
+    max-height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     padding: 0.5rem 1rem;
   }
 

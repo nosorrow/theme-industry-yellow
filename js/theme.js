@@ -97,7 +97,8 @@ const app = {
                             $(this).find($submenu).fadeOut();
                         }
                     );
-                    let $subMenu = $(this).next(".dropdown-menu");
+               /*
+                    let $subMenu = $(this).next();
                     let $submenuCaret = $(".submenu a.dropdown-item");
 
                     if ($subMenu.hasClass('show')) {
@@ -106,7 +107,7 @@ const app = {
                     } else {
                         $submenuCaret.removeClass('submenu-caret-rotate');
 
-                    }
+                    }*/
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
@@ -114,36 +115,41 @@ const app = {
                 }
             });
 
+        } else {
+            onClick();
         }
     }
 };
 
-// Submenu show onclick
-$('.dropdown-menu a.dropdown-toggle').on('click', function () {
-    let $this = $(this);
-    if (!$(this).next().hasClass('show')) {
-        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-    }
-
-    let $subMenu = $(this).next();
-    $subMenu.toggleClass('show');
-    $("a.dropdown-item.dropdown-toggle.submenu-caret-rotate").removeClass('submenu-caret-rotate');
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        if ($subMenu.hasClass('show')) {
-            $this.addClass('submenu-caret-rotate');
-
-        } else {
-            $this.removeClass('submenu-caret-rotate');
-
+function onClick(){
+    // Submenu show onclick
+    $('.dropdown-menu a.dropdown-toggle').on('click', function () {
+        let $this = $(this);
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
         }
-    }
 
-    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
-        $('.dropdown-submenu .show').removeClass("show");
+        let $subMenu = $(this).next();
+        $subMenu.toggleClass('show');
+        $("a.dropdown-item.dropdown-toggle.submenu-caret-rotate").removeClass('submenu-caret-rotate');
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            if ($subMenu.hasClass('show')) {
+                $this.addClass('submenu-caret-rotate');
+
+            } else {
+                $this.removeClass('submenu-caret-rotate');
+
+            }
+        }
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
+            $('.dropdown-submenu .show').removeClass("show");
+        });
+
+        return false;
     });
 
-    return false;
-});
+}
 
 // Jquery equal height
 function equalize(selector) {
