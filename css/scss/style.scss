@@ -8,12 +8,17 @@ body {
 }
 
 /* = I. Sections = */
-section.container {
+section.container-fluid {
   background-color: #fff;
+  padding: 20px;
 }
 
 .byt-sect-mb {
   margin-bottom: 90px !important;
+}
+
+.byt-sect-pt {
+  padding-top: 90px;
 }
 
 .byt-sect-title {
@@ -172,7 +177,7 @@ section.container {
 
 /* = 3. Section About = */
 .byt-sect-about {
-  background-color: $theme-white-dark;
+  background-color: #fff;
 
   .byt-sect-title:after {
     margin: 0;
