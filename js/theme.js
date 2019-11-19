@@ -52,7 +52,7 @@ const app = {
     },
     // Fix top navbar on scroll
     fixNavbar: function (opt) {
-        if (opt === true) {
+        if (opt === true || $(mainmenu).data("fixed") === true) {
             window.addEventListener('scroll', function (e) {
 
                 if (window.scrollY > header.clientHeight + 45) {
@@ -68,7 +68,7 @@ const app = {
     },
     // Dropdown hover
     onHoverNav: function (opt) {
-        if (opt === true) {
+        if (opt === true || $(mainmenu).data('dropdown-hover') === true) {
             $(window).on("load resize", function () {
                 if (this.matchMedia("(min-width: 768px)").matches) {
                     $dropdown.hover(

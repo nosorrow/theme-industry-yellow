@@ -183,6 +183,19 @@ body {
   p {
     color: $theme-grey-light;
   }
+
+  li {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color:$theme-grey;
+  }
+
+  i.byt-list-icon {
+    padding-right: 8px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: $theme-yellow;
+  }
 }
 
 /* = 4. Section Latest News = */

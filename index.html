@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/vendor/bootstrap.css">
 	<link rel="stylesheet" href="css/vendor/font-awesome-5/css/all.css">
 	<link type="text/css" rel="stylesheet" href="css/vendor/lightslider/src/css/lightslider.css"/>
-	<link rel="stylesheet" href="css/style.css?v=333">
+	<link rel="stylesheet" href="css/style.css?v=1011">
 </head>
 <body>
 <!--[if IE]>
@@ -36,7 +36,7 @@
 	</div>
 	<!--	Navbar -->
 	<div class="container">
-		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white">
+		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white" data-dropdown-hover="true" data-fixed="true">
 			<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,8 +71,7 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<!--							Submenu-->
-
+							<!--					 End	Submenu-->
 
 							<a class="dropdown-item" href="#">Another action</a>
 							<div class="dropdown-divider w-75 ml-3"></div>
@@ -336,10 +335,17 @@
 				<p>
 					Aenean sodales ultricies vestibulum. Nulla luctus aliquet lacus vitae vehicula.
 					Nam magna ante, imperdiet id iaculis at, auctor at arcu.
+				</p>
+				<p>
 					Integer eleifend nunc quis orci cursus elementum et id enim.
 					Cras quis ipsum sed felis bibendum viverra.
 					Integer viverra lacus id eros fringilla, a rutrum erat posuere.
 				</p>
+				<ul class="list-unstyled">
+					<li><i class="fas fa-check byt-list-icon"> </i> 25+ years of experience et malesuada fames ac ante ipsum primis</li>
+					<li><i class="fas fa-check byt-list-icon"> </i> Curabitur lacinia leo odio, quis imperdiet augue fermentum non. </li>
+					<li><i class="fas fa-check byt-list-icon"> </i> Quisque aliquam, massa sit amet eleifend tempor</li>
+				</ul>
 				<button class="btn byt-btn-yellow">Read more</button>
 			</div>
 			<div class="col-12 col-sm-6 byt-sectabout-img">
@@ -513,11 +519,11 @@
 <script>
     $(document).ready(function () {
         theme.settings({
-            navbarFixed: true,
-            dropdownHover: false,
+          //  navbarFixed: true,
+         //   dropdownHover: false,
             equalize: [
-                '.byt-card-news',
-                '.carousel .carousel-item6'
+               '.byt-card-news',
+               '.carousel .carousel-item'
             ]
         }).set();
 

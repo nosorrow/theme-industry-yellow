@@ -186,6 +186,10 @@ div.submenu:hover .dropdown-submenu {
     padding: 0.5rem 1rem;
 
   }
+  #main-menu li.nav-item:hover,
+  #main-menu li.nav-item.active {
+    border-bottom: none;
+  }
 
   .navbar-brand,
   .changednav a.navbar-brand {

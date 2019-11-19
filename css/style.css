@@ -173,6 +173,11 @@ div.submenu:hover .dropdown-submenu {
     padding: 0.5rem 1rem;
   }
 
+  #main-menu li.nav-item:hover,
+#main-menu li.nav-item.active {
+    border-bottom: none;
+  }
+
   .navbar-brand img,
 .changednav a.navbar-brand img {
     max-width: 30vw;
@@ -3402,6 +3407,17 @@ body {
 }
 .byt-sect-about p {
   color: #7e7e7e;
+}
+.byt-sect-about li {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  color: #676767;
+}
+.byt-sect-about i.byt-list-icon {
+  padding-right: 8px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #f5d109;
 }
 
 /* = 4. Section Latest News = */
