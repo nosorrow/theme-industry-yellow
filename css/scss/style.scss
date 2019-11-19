@@ -4,9 +4,14 @@
 
 body {
   font-family: $font-family;
+  background-color: $theme-body-bg;
 }
 
 /* = I. Sections = */
+section.container {
+  background-color: #fff;
+}
+
 .byt-sect-mb {
   margin-bottom: 90px !important;
 }

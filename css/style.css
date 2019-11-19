@@ -3250,9 +3250,14 @@ div.submenu:hover .dropdown-submenu {
 }
 body {
   font-family: "Hind", "Helvetica", sans-serif;
+  background-color: #F7F9FB;
 }
 
 /* = I. Sections = */
+section.container {
+  background-color: #fff;
+}
+
 .byt-sect-mb {
   margin-bottom: 90px !important;
 }
