@@ -36,7 +36,7 @@
 	</div>
 	<!--	Navbar -->
 	<div class="container">
-		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white" data-dropdown-hover="true" data-fixed="true">
+		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white">
 			<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -350,7 +350,7 @@
 				</ul>
 				<button class="btn byt-btn-yellow">Read more</button>
 			</div>
-			<div class="col-12 col-sm-6 byt-sectabout-img">
+			<div class="col-12 col-sm-6 byt-sectabout-img p-0 m-0">
 				<img src="img/about-company.png" alt="image" class="img-fluid">
 			</div>
 		</div>
@@ -521,8 +521,8 @@
 <script>
     $(document).ready(function () {
         theme.settings({
-          //  navbarFixed: true,
-         //   dropdownHover: false,
+            navbarFixed: true,
+            dropdownHover: true,
             equalize: [
                '.byt-card-news',
                '.carousel .carousel-item'

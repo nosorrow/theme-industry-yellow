@@ -68,6 +68,8 @@ const app = {
     },
     // Dropdown hover
     onHoverNav: function (opt) {
+        let dataHover = $(mainmenu).data('dropdown-hover');
+        console.log(opt === true || dataHover === true);
         if (opt === true || $(mainmenu).data('dropdown-hover') === true) {
             $(window).on("load resize", function () {
                 if (this.matchMedia("(min-width: 768px)").matches) {
@@ -116,6 +118,7 @@ const app = {
             });
 
         } else {
+            console.log('Menu click!');
             onClick();
         }
     }
