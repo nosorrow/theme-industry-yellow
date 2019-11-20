@@ -113,7 +113,7 @@ const app = {
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
-
+                    onClick();
                 }
             });
 
