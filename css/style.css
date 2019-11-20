@@ -5,7 +5,7 @@
 }
 
 .byt-hero {
-  background: url("../img/hero-4.png") center center/cover no-repeat fixed;
+  background: url("../img/hero-6.png") center center/cover no-repeat fixed;
   margin: 0;
   min-height: 600px;
   border-radius: 0 !important;
@@ -3566,6 +3566,34 @@ footer .byt-footer ::placeholder {
 .byt-footer-bottom span, .byt-footer-bottom p {
   color: #6087a5;
   font-size: 0.9rem;
+}
+
+/* = Progress bar = */
+.progress {
+  height: 4px;
+}
+
+.progress-bar {
+  background-color: #f5d109;
+}
+
+.byt-progress-bar-title {
+  position: relative;
+  text-transform: uppercase;
+}
+.byt-progress-bar-title h6 {
+  font-weight: 700;
+}
+.byt-progress-bar-title span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 10;
+  font-size: 0.9rem;
+  color: #676767;
 }
 
 /* = Image hover Effects = */
