@@ -12,7 +12,7 @@ body {
   background: $theme-white-dark;
 }
 section.container-fluid {
-  background-color: #fff;
+  background-color: $theme-white-dark;
   padding: 20px;
 }
 
@@ -150,7 +150,7 @@ section.container-fluid {
     font-size: 1rem;
     font-weight: bolder;
   }
- 
+
 }
 
 /* = 2. Section Projects = */
