@@ -8,6 +8,9 @@ body {
 }
 
 /* = I. Sections = */
+.white-dark {
+  background: $theme-white-dark;
+}
 section.container-fluid {
   background-color: #fff;
   padding: 20px;

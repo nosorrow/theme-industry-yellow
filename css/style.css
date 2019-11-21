@@ -5,10 +5,10 @@
 }
 
 .byt-hero {
-  background: url("../img/hero-6.png") center center/cover no-repeat fixed;
   margin: 0;
   min-height: 600px;
   border-radius: 0 !important;
+  background-size: cover;
 }
 
 .byt-top-contacts {
@@ -134,7 +134,7 @@ div.submenu:hover .dropdown-submenu {
 
 /* Change Navbar on scroll */
 .changednav {
-  padding: 0.3rem 1rem !important;
+  padding: 0.4rem 1rem !important;
   box-shadow: 1px 1px 8px #ccc !important;
   background-color: #fff !important;
 }
@@ -151,15 +151,13 @@ div.submenu:hover .dropdown-submenu {
 /* Hero Media queries for Extra Small mobile devices */
 @media screen and (max-width: 576px) {
   .byt-hero {
-    background: url("../img/hero-4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: 45% !important;
     width: 100%;
     height: auto;
     opacity: 1;
     visibility: inherit;
-    z-index: 20;
   }
 
   #top-contacts {
@@ -3254,6 +3252,10 @@ body {
 }
 
 /* = I. Sections = */
+.white-dark {
+  background: #f7f9fa;
+}
+
 section.container-fluid {
   background-color: #fff;
   padding: 20px;
