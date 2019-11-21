@@ -149,8 +149,8 @@ section.container-fluid {
     color: #000;
     font-size: 1rem;
     font-weight: bolder;
-
   }
+ 
 }
 
 /* = 2. Section Projects = */
@@ -350,7 +350,7 @@ footer .byt-footer {
   }
 
   a:hover {
-    color: dodgerblue;
+    color: $theme-blue-footer-link;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }

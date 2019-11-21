@@ -3549,7 +3549,7 @@ footer .byt-footer p, footer .byt-footer a {
   font-weight: lighter;
 }
 footer .byt-footer a:hover {
-  color: dodgerblue;
+  color: #1E90FF;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
