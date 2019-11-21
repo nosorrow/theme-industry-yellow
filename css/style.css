@@ -3330,6 +3330,21 @@ section.container-fluid {
   border-radius: 50%;
 }
 
+.byt-cart a,
+.byt-cart a:hover,
+.byt-cart a:visited,
+.byt-cart a span,
+.byt-cart a:hover span,
+.byt-cart a:focus span, .byt-service-text a,
+.byt-service-text a:hover,
+.byt-service-text a:visited,
+.byt-service-text a span,
+.byt-service-text a:hover span,
+.byt-service-text a:focus span {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
 /* = 1. Section services = */
 .byt-service-label {
   position: absolute;
@@ -3446,15 +3461,6 @@ section.container-fluid {
 .byt-cart p {
   color: #7e7e7e;
 }
-.byt-cart a,
-.byt-cart a:hover,
-.byt-cart a:visited,
-.byt-cart a span,
-.byt-cart a:hover span,
-.byt-cart a:focus span {
-  text-decoration: none;
-  transition: all 0.2s ease-out;
-}
 .byt-cart a {
   color: #000;
   font-weight: bolder;
@@ -3466,6 +3472,10 @@ section.container-fluid {
 .byt-cart a:hover span.byt-rarr {
   margin-left: 0.5rem !important;
   color: #f5d109;
+}
+
+a:hover span.byt-rarr {
+  margin-left: 0.5rem !important;
 }
 
 .byt-card-title {

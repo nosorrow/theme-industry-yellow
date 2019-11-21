@@ -90,6 +90,19 @@ section.container-fluid {
   border-radius: 50%;
 }
 
+
+.byt-cart, .byt-service-text {
+  a,
+  a:hover,
+  a:visited,
+  a span,
+  a:hover span,
+  a:focus span {
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+}
+
 /* = 1. Section services = */
 
 .byt-service-label {
@@ -231,16 +244,6 @@ section.container-fluid {
     color: $theme-grey-light;
   }
 
-  a,
-  a:hover,
-  a:visited,
-  a span,
-  a:hover span,
-  a:focus span {
-    text-decoration: none;
-    transition: all 0.2s ease-out;
-  }
-
   a {
     color: #000;
     font-weight: bolder;
@@ -256,6 +259,10 @@ section.container-fluid {
     margin-left: 0.5rem !important;
     color: $theme-yellow;
   }
+}
+
+a:hover span.byt-rarr {
+  margin-left: 0.5rem !important;
 }
 
 .byt-card-title {
