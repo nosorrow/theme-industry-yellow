@@ -20,7 +20,7 @@
 <![endif]-->
 
 <!--Website Header-->
-<header id="hero" class="jumbotron byt-hero" style="background-image: url('img/hero-6.png');">
+<header id="hero" class="jumbotron byt-hero m-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/hero-6.png');">
 	<div id="top-contacts" class="container byt-top-contacts">
 		<ul class="nav justify-content-end">
 			<li class="nav-item">
@@ -34,10 +34,10 @@
 			</li>
 		</ul>
 	</div>
-	<!--Navbar-->
+	<!--Navbar - modified Bootstrap navbar-->
 	<div class="container">
 		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white" data-dropdown-hover="true" data-fixed="true">
-			<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+			<a class="navbar-brand logo-size-1" href="#"><img src="img/logo.png"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -129,11 +129,14 @@
 		</div>
 		<div class="row">
 			<div class="col-12 col-md-4 mb-sm-3">
+				<!--Services Card-->
 				<div class="card byt-img-container">
 					<img src="img/service-1.png" class="card-img-top byt-img-hover" alt="...">
+					<!--Front label with image-->
 					<div class="byt-service-label">
 						<span class="byt-service-lbl-yll"><img src="img/building.png" alt=""></span><span class="byt-service-lbl-bl">Loren working</span>
 					</div>
+					<!--Back card content-->
 					<div class="byt-service-text">
 						<h4><img src="img/building.png" alt=""> Loren working</h4>
 						<p>Integer eros quam, molestie vel condimentum in, aliquam id lacus.
@@ -141,6 +144,7 @@
 						<a href="#">View more <span class="byt-rarr">&rarr;</span></a>
 					</div>
 				</div>
+				<!--End Services Card-->
 			</div>
 			<div class="col-12 col-md-4 mb-sm-3">
 				<div class="card byt-img-container">
@@ -235,7 +239,7 @@
 	<hr>
 	<!--Projects slider-->
 	<div id="projects-slider" class="container byt-sect-mb">
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col">
 				<ul id="lightSlider">
 					<li>

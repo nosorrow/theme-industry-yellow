@@ -12,6 +12,7 @@
   background-attachment: fixed;
   background-size: cover;
   border-bottom: 2px solid #f5d109;
+  border-radius: 0;
 }
 
 .byt-top-contacts {
