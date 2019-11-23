@@ -19,7 +19,7 @@
 	your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
-<!--  Start header section -->
+<!--Website Header-->
 <header id="hero" class="jumbotron byt-hero" style="background-image: url('img/hero-6.png');">
 	<div id="top-contacts" class="container byt-top-contacts">
 		<ul class="nav justify-content-end">
@@ -34,7 +34,7 @@
 			</li>
 		</ul>
 	</div>
-	<!--	Navbar -->
+	<!--Navbar-->
 	<div class="container">
 		<nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-white" data-dropdown-hover="true" data-fixed="true">
 			<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
@@ -57,7 +57,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Action</a>
-							<!--							Submenu-->
+							<!--Submenu-->
 							<div class="submenu">
 								<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button"
 									 data-toggle="dropdown"
@@ -71,7 +71,7 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<!--					 End	Submenu-->
+							<!--End	Submenu-->
 							<a class="dropdown-item" href="#">Another action</a>
 							<div class="dropdown-divider w-75 ml-3"></div>
 							<a class="dropdown-item" href="#">Something else here</a>
@@ -106,18 +106,20 @@
 				<button class="btn btn-outline-dark my-2 my-sm-0" type="button">GET QUOTE</button>
 			</div>
 		</nav>
-		<!--		Hero Welcome message -->
+		<!--Hero Welcome message-->
 		<div class="row">
 			<div class="col-12 byt-hero-content">
 				<h1 class="animated bounceInDown">Loren <span>Industry</span></h1>
 				<h5 class="mb-3 animated fadeIn delay-1s">Nulla eget justo et elit aliquet ullamcorper ut id tellus.
 					Pellentesque hendrerit tellus iaculis viverra mattis.</h5>
+				<p id="width"></p>
 				<button class="btn btn-lg byt-btn-yellow my-2 my-sm-0 animated fadeIn" type="button">GET QUOTE</button>
 			</div>
 		</div>
 	</div>
 </header>
-<!--  Start section Services -->
+<!--End Website Header-->
+<!--Start section Services-->
 <section id="services" class="container-fluid byt-sect-mb white-dark">
 	<div class="container byt-sect-pt">
 		<div class="row">
@@ -171,7 +173,7 @@
 		</div>
 	</div>
 </section>
-<!--   start section Mission -->
+<!--Start section Mission-->
 <section id="mission" class="container byt-sect-mb">
 	<div class="row">
 		<div class="col text-center mb-5 p-5 white-dark">
@@ -182,7 +184,7 @@
 		</div>
 	</div>
 </section>
-<!--   Start section Testimonials -->
+<!--Start section Testimonials-->
 <section class="container-fluid byt-testimon-bgr byt-sect-mb" style="background: url('img/testimonial-bgr-2.png') 100% 0 no-repeat;">
 	<div id="carouselTestimonialsIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -221,7 +223,7 @@
 		</div>
 	</div>
 </section>
-<!--   Start section Projects -->
+<!--Start section Projects-->
 <section id="projects" class="container byt-sect-mb">
 	<div class="row">
 		<div class="col text-center mb-5 p-5 white-dark">
@@ -231,12 +233,13 @@
 		</div>
 	</div>
 	<hr>
-	<!-- Projects slider -->
+	<!--Projects slider-->
 	<div id="projects-slider" class="container byt-sect-mb">
 		<div class="row">
 			<div class="col">
 				<ul id="lightSlider">
 					<li>
+						<!--Slider card-->
 						<div class="byt-project-img-container">
 							<img src="img/project-1.png" class="byt-img-hover img-fluid" alt="project-1">
 							<div class="byt-project-text text-center middle">
@@ -246,6 +249,7 @@
 								</div>
 							</div>
 						</div>
+						<!--End Slider card-->
 					</li>
 					<li>
 						<div class="card byt-project-img-container w-100">
@@ -318,7 +322,7 @@
 		</div>
 	</div>
 </section>
-<!--   start section About Company -->
+<!--Start section About Company-->
 <section id="about" class="byt-sect-mb">
 	<div class="container">
 		<div class="row">
@@ -372,7 +376,7 @@
 		</div>
 	</div>
 </section>
-<!--	Section latest news -->
+<!--Section latest news-->
 <section id="news" class="container byt-sect-mb">
 	<div class="row">
 		<div class="col text-center mb-5">
@@ -432,7 +436,7 @@
 		</div>
 	</div>
 </section>
-<!--	Section contact us -->
+<!--Section contact us-->
 <section id="contacts" class="container-fluid byt-sect-contacts">
 	<div class="container">
 		<div class="row">
@@ -545,6 +549,10 @@
             ]
         }).set();
 
+
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		$("#width").html(w + 'x' + h);
         /* Lightslider coniguration */
         $("#lightSlider").lightSlider({
             item: 4,

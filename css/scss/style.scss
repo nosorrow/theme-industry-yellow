@@ -139,7 +139,6 @@ section.container-fluid {
   opacity: 0;
   filter: alpha(opacity=0);
 
-
   h4 {
     color: #000;
     font-weight: bolder;
@@ -151,6 +150,14 @@ section.container-fluid {
     font-weight: bolder;
   }
 
+}
+
+@media screen and (max-width: 360px) {
+  .byt-service-text {
+    padding: 5px 20px;
+    margin: -40px 0;
+    font-size: 0.85em;
+  }
 }
 
 /* = 2. Section Projects = */

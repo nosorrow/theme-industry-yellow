@@ -3379,6 +3379,13 @@ section.container-fluid {
   font-weight: bolder;
 }
 
+@media screen and (max-width: 360px) {
+  .byt-service-text {
+    padding: 5px 20px;
+    margin: -40px 0;
+    font-size: 0.85em;
+  }
+}
 /* = 2. Section Projects = */
 .byt-project-text {
   display: inline-block;
