@@ -11,6 +11,7 @@ body {
 .white-dark {
   background: $theme-white-dark;
 }
+
 section.container-fluid {
   background-color: $theme-white-dark;
   padding: 20px;
@@ -57,7 +58,7 @@ section.container-fluid {
 }
 
 .byt-testimon-bgr {
- // background: url("../img/testimonial-bgr-2.png") 100% 0 no-repeat;
+  // background: url("../img/testimonial-bgr-2.png") 100% 0 no-repeat;
   margin: 0;
   min-height: 350px;
   background-size: cover !important;
@@ -220,7 +221,7 @@ section.container-fluid {
   li {
     font-weight: bolder;
     padding-bottom: 10px;
-    color:$theme-grey;
+    color: $theme-grey;
   }
 
   i.byt-list-icon {
@@ -396,16 +397,20 @@ footer .byt-footer {
 .progress {
   height: 4px;
 }
+
 .progress-bar {
   background-color: $theme-yellow;
 
 }
+
 .byt-progress-bar-title {
   position: relative;
   text-transform: uppercase;
+
   h6 {
     font-weight: 700;
   }
+
   span {
     position: absolute;
     right: 0;
@@ -419,6 +424,7 @@ footer .byt-footer {
   }
 
 }
+
 /* = Image hover Effects = */
 
 .byt-img-container {
@@ -481,7 +487,8 @@ footer .byt-footer {
     transform: scale(1.25);
   }
 }
-.byt-card-news{
+
+.byt-card-news {
   box-shadow: 0 0 8px #e2e2e2 !important;
   border: none;
 }
@@ -573,3 +580,10 @@ footer .byt-footer {
   }
 }
 
+/*= Google map =*/
+
+#map > iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}

@@ -144,7 +144,7 @@ div.submenu:hover .dropdown-submenu {
 }
 
 .changednav a.navbar-brand > img {
-  height: 50px;
+  height: 45px;
   width: auto;
 }
 
@@ -3737,6 +3737,12 @@ footer .byt-footer ::placeholder {
   .byt-sectabout-img {
     padding: 0;
   }
+}
+/*= Google map =*/
+#map > iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

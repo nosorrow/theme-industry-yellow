@@ -19,16 +19,16 @@ var theme = {
         '.byt-card-news',
         '.carousel .carousel-item'
     ],
-    settings: function (options) {
+    options: function (options) {
         this.dropdownHover = options.dropdownHover || this.dropdownHover;
         this.equalize = options.equalize || this.equalize;
         this.navbarFixed = options.navbarFixed || this.navbarFixed;
         return this;
     },
-    set: function () {
+    bind: function () {
         app.equalize(this.equalize);
         app.fixNavbar(this.navbarFixed);
-        app.onHoverNav(this.dropdownHover)
+        app.onHoverNav(this.dropdownHover);
     }
 };
 
@@ -69,7 +69,6 @@ const app = {
     // Dropdown hover
     onHoverNav: function (opt) {
         let dataHover = $(mainmenu).data('dropdown-hover');
-        console.log(opt === true || dataHover === true);
         if (opt === true || $(mainmenu).data('dropdown-hover') === true) {
             $(window).on("load resize", function () {
                 if (this.matchMedia("(min-width: 768px)").matches) {
@@ -99,17 +98,6 @@ const app = {
                             $(this).find($submenu).fadeOut();
                         }
                     );
-               /*
-                    let $subMenu = $(this).next();
-                    let $submenuCaret = $(".submenu a.dropdown-item");
-
-                    if ($subMenu.hasClass('show')) {
-                        $submenuCaret.addClass('submenu-caret-rotate');
-
-                    } else {
-                        $submenuCaret.removeClass('submenu-caret-rotate');
-
-                    }*/
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
@@ -118,7 +106,6 @@ const app = {
             });
 
         } else {
-            console.log('Menu click!');
             onClick();
         }
     }
