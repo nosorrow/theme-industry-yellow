@@ -101,17 +101,17 @@ const app = {
 
                 } else {
                     $dropdown.off("mouseenter mouseleave");
-                    onClick();
+                    dropdownExpand();
                 }
             });
 
         } else {
-            onClick();
+            dropdownExpand();
         }
     }
 };
 
-function onClick(){
+function dropdownExpand(){
     // Submenu show onclick
     $('.dropdown-menu a.dropdown-toggle').on('click', function () {
         let $this = $(this);
