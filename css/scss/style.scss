@@ -284,9 +284,12 @@ a:hover span.byt-rarr {
 /* = Section Contact us = */
 
 .byt-sect-contacts {
-  background: url("../img/contact-bgr.jpg") no-repeat;
-  min-height: 450px;
+  background: url("../img/contact-bgr.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0;
 
   h3.byt-sect-title {
     color: #ffffff;
