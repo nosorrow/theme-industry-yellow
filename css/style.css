@@ -3574,6 +3574,10 @@ footer .byt-footer ::placeholder {
   color: #7e7e7e;
 }
 
+.byt-footer-social a {
+  margin-right: 10px;
+}
+
 .byt-footer-bottom {
   min-height: 40px;
   background-color: #151c21;

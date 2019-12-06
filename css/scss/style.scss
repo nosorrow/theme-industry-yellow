@@ -386,10 +386,13 @@ footer .byt-footer {
   }
 }
 
+.byt-footer-social a {
+  margin-right: 10px;
+}
+
 .byt-footer-bottom {
   min-height: 40px;
   background-color: $theme-blue-darker;
-
 
   span, p {
     color: $theme-blue-grey-light;
