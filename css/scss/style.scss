@@ -57,6 +57,7 @@ section.container-fluid {
   font-weight: lighter;
 }
 
+/* = Section testimonial = */
 .byt-testimon-bgr {
   // background: url("../img/testimonial-bgr-2.png") 100% 0 no-repeat;
   margin: 0;
@@ -72,6 +73,10 @@ section.container-fluid {
   img {
     width: 200px;
     height: 200px;
+  }
+  img.byt-octagon {
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   }
 
   h5 {

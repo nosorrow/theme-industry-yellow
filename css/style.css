@@ -3293,6 +3293,7 @@ section.container-fluid {
   font-weight: lighter;
 }
 
+/* = Section testimonial = */
 .byt-testimon-bgr {
   margin: 0;
   min-height: 350px;
@@ -3307,6 +3308,10 @@ section.container-fluid {
 .byt-carousel img {
   width: 200px;
   height: 200px;
+}
+.byt-carousel img.byt-octagon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .byt-carousel h5 {
   padding-top: 15px;
