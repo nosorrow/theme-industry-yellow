@@ -71,7 +71,7 @@ const app = {
         let dataHover = $(mainmenu).data('dropdown-hover');
         if (opt === true || $(mainmenu).data('dropdown-hover') === true) {
             $(window).on("load resize", function () {
-                if (this.matchMedia("(min-width: 768px)").matches) {
+                if (this.matchMedia("(min-width: 992px)").matches) {
                     $dropdown.hover(
                         function () {
                             const $this = $(this);
@@ -111,7 +111,7 @@ const app = {
     }
 };
 
-function dropdownExpand(){
+function dropdownExpand() {
     // Submenu show onclick
     $('.dropdown-menu a.dropdown-toggle').on('click', function () {
         let $this = $(this);

@@ -107,8 +107,9 @@
 				<h1 class="animated bounceInDown">Loren <span>Industry</span></h1>
 				<h5 class="mb-3 animated fadeIn delay-1s">Nulla eget justo et elit aliquet ullamcorper ut id tellus.
 					Pellentesque hendrerit tellus iaculis viverra mattis.</h5>
-				<p id="width"></p>
 				<button class="btn btn-lg byt-btn-yellow my-2 my-sm-0 animated fadeIn" type="button">GET QUOTE</button>
+				<p id="width"></p>
+
 			</div>
 		</div>
 	</div>
@@ -193,7 +194,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active text-center byt-carousel">
-				<img src="img/portrait-1.jpg" class="byt-octagon" alt="portrait">
+				<img src="img/portrait-1.jpg" class="rounded-circle" alt="portrait">
 				<h5>Steve Harris</h5>
 				<h6>Engineer</h6>
 				<p>Sed fermentum orci neque, vitae tristique nulla faucibus nec.
@@ -201,7 +202,7 @@
 					Quisque in tempus quam. Donec pulvinar orci in elit facilisis, at ornare lorem euismod.</p>
 			</div>
 			<div class="carousel-item text-center byt-carousel">
-				<img src="img/portrait-2.jpg" class="byt-octagon" alt="portrait">
+				<img src="img/portrait-2.jpg" class="rounded-circle" alt="portrait">
 				<h5>Linda Harris</h5>
 				<h6>Engineer</h6>
 				<p>Sed fermentum orci neque, vitae tristique nulla faucibus nec.
@@ -212,7 +213,7 @@
 				</p>
 			</div>
 			<div class="carousel-item text-center byt-carousel">
-				<img src="img/portrait-1.jpg" class="byt-octagon" alt="portrait">
+				<img src="img/portrait-1.jpg" class="rounded-circle" alt="portrait">
 				<h5>Bob Harris</h5>
 				<h6>Designer</h6>
 				<p>Sed fermentum orci neque, vitae tristique nulla faucibus nec.
@@ -332,7 +333,7 @@
 	</div>
 	<div class="container byt-sect-about">
 		<div class="row">
-			<div class="col-12 col-sm-6 p-5">
+			<div class="col-12 col-lg-6 p-5">
 				<h3 class="byt-sect-title">We have 25 years
 					of experience,
 					in this industry</h3>
@@ -369,7 +370,7 @@
 				</div>
 				<button class="btn byt-btn-yellow">Read more</button>
 			</div>
-			<div class="col-12 col-sm-6 byt-sectabout-img p-0 m-0">
+			<div class="col-12 col-lg-6 byt-sectabout-img p-0 m-0">
 				<img src="img/about-company.jpg" alt="image" class="img-fluid">
 			</div>
 		</div>
@@ -386,7 +387,7 @@
 		<div class="col-12 col-md-4 mb-2">
 			<div class="card byt-card-news">
 				<div class="byt-news-img-container">
-					<img src="img/card-1.png" class="card-img-top byt-img-hover" alt="card">
+					<img src="img/card-1.png" class="card-img-top byt-img-hover img-fluid" alt="card">
 				</div>
 				<div class="card-body byt-cart">
 					<h6>SEPTEMBER 25 2019<span class="byt-divider">&bull;</span>James Connor</h6>
@@ -404,7 +405,7 @@
 		<div class="col-12 col-md-4 mb-2">
 			<div class="card byt-card-news">
 				<div class="byt-news-img-container">
-					<img src="img/card-2.png" class="card-img-top byt-img-hover" alt="card">
+					<img src="img/card-2.png" class="card-img-top byt-img-hover img-fluid" alt="card">
 				</div>
 				<div class="card-body byt-cart">
 					<h6>JUNE 08 2019<span class="byt-divider">&bull;</span>Adam Smith</h6>
@@ -420,7 +421,7 @@
 		<div class="col-12 col-md-4 mb-2">
 			<div class="card byt-card-news">
 				<div class="byt-news-img-container">
-					<img src="img/card-3.png" class="card-img-top byt-img-hover" alt="card">
+					<img src="img/card-3.png" class="card-img-top byt-img-hover img-fluid" alt="card">
 				</div>
 				<div class="card-body byt-cart">
 					<h6>MAY 27 2019<span class="byt-divider">&bull;</span>Linada May</h6>
@@ -554,9 +555,15 @@
             ]
         }).bind();
 
-		// var w = window.innerWidth;
-		// var h = window.innerHeight;
-		// $("#width").html(w + 'x' + h);
+        window.addEventListener('resize',function (e) {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            $("#width").html(w + 'x' + h);
+        });
+
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        $("#width").html(w + 'x' + h);
 
         /* Lightslider coniguration */
         $("#lightSlider").lightSlider({
