@@ -3342,9 +3342,8 @@ section.container-fluid {
 /* = 1. Section services = */
 .byt-service-label {
   position: absolute;
-  padding: 8px;
   bottom: 25px;
-  right: 20px;
+  left: 0;
 }
 .byt-service-label .byt-service-lbl-yll {
   background: #f5d109;
@@ -3635,7 +3634,7 @@ footer .byt-footer ::placeholder {
 
 .byt-news-img-container {
   overflow: hidden;
-  max-height: 200px;
+  max-height: 400px;
 }
 
 .byt-img-hover {

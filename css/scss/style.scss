@@ -109,9 +109,8 @@ section.container-fluid {
 
 .byt-service-label {
   position: absolute;
-  padding: 8px;
   bottom: 25px;
-  right: 20px;
+  left: 0;
 
   .byt-service-lbl-yll {
     background: $theme-yellow;
@@ -453,9 +452,8 @@ footer .byt-footer {
 
 .byt-news-img-container {
   overflow: hidden;
-  max-height: 200px;
+  max-height: 400px;
 }
-
 
 .byt-img-hover {
   opacity: 1;
