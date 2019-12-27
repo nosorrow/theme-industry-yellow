@@ -3245,6 +3245,10 @@ body {
   background-color: #f2f4f6;
 }
 
+div {
+  z-index: 1;
+}
+
 /* = I. Sections = */
 .white-dark {
   background: #f7f9fa;
@@ -3624,6 +3628,18 @@ footer .byt-footer ::placeholder {
   margin: 0 15px 15px 15px;
 }
 
+.byt-img-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: -25px;
+  bottom: 25px;
+  background-color: #f5d109;
+  z-index: -1;
+}
+
 .byt-project-img-container {
   overflow: hidden;
   position: relative;
@@ -3661,6 +3677,10 @@ footer .byt-footer ::placeholder {
 .byt-img-container:hover .byt-img-hover {
   opacity: 0.1;
   filter: alpha(opacity=10);
+}
+
+.byt-img-container:hover::before {
+  background-color: dodgerblue;
 }
 
 .byt-project-img-container:hover .byt-img-hover {

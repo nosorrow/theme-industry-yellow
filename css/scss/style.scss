@@ -6,7 +6,9 @@ body {
   font-family: $font-family;
   background-color: $theme-body-bg;
 }
-
+div {
+  z-index: 1;
+}
 /* = I. Sections = */
 .white-dark {
   background: $theme-white-dark;
@@ -441,6 +443,17 @@ footer .byt-footer {
   border: none;
   margin: 0 15px 15px 15px;
 }
+.byt-img-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: -25px;
+  bottom: 25px;
+  background-color: $theme-yellow;
+  z-index: -1;
+}
 
 .byt-project-img-container {
   overflow: hidden;
@@ -479,6 +492,9 @@ footer .byt-footer {
 .byt-img-container:hover .byt-img-hover {
   opacity: 0.1;
   filter: alpha(opacity=10);
+}
+.byt-img-container:hover::before{
+  background-color: dodgerblue;
 }
 
 .byt-project-img-container:hover {
