@@ -3246,7 +3246,7 @@ body {
 }
 
 div {
-  z-index: 1;
+  z-index: 0;
 }
 
 /* = I. Sections = */
@@ -3363,13 +3363,15 @@ section.container-fluid {
 }
 
 .byt-service-text {
+  position: absolute;
+  left: -25px;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   position: absolute;
   padding: 15px 30px;
   margin: -30px 0;
   color: white;
-  top: 30%;
+  top: 20%;
   visibility: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -3628,16 +3630,20 @@ footer .byt-footer ::placeholder {
   margin: 0 15px 15px 15px;
 }
 
-.byt-img-container::before {
+#services .card::before {
   content: "";
   position: absolute;
-  display: block;
   height: 100%;
   width: 100%;
   left: -25px;
   bottom: 25px;
   background-color: #f5d109;
-  z-index: -1;
+  z-index: -2;
+}
+
+#services .card:hover::before {
+  background-color: dodgerblue;
+  z-index: 0 !important;
 }
 
 .byt-project-img-container {
@@ -3677,10 +3683,6 @@ footer .byt-footer ::placeholder {
 .byt-img-container:hover .byt-img-hover {
   opacity: 0.1;
   filter: alpha(opacity=10);
-}
-
-.byt-img-container:hover::before {
-  background-color: dodgerblue;
 }
 
 .byt-project-img-container:hover .byt-img-hover {
