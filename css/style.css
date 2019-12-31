@@ -3245,10 +3245,6 @@ body {
   background-color: #f2f4f6;
 }
 
-div {
-  z-index: 0;
-}
-
 /* = I. Sections = */
 .white-dark {
   background: #f7f9fa;
