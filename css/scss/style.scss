@@ -6,9 +6,11 @@ body {
   font-family: $font-family;
   background-color: $theme-body-bg;
 }
+
 section div {
   z-index: 1;
 }
+
 /* = I. Sections = */
 .white-dark {
   background: $theme-white-dark;
@@ -135,8 +137,8 @@ section.container-fluid {
   left: -25px;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
-  padding: 15px 40px;
-  margin: -30px 0;
+ // padding: 15px 40px;
+ // margin: -30px 0;
   color: white;
   top: 20%;
   visibility: hidden;
@@ -445,6 +447,7 @@ footer .byt-footer {
   border: none;
   margin: 0 15px 15px 15px;
 }
+
 #services .card::before {
   content: "";
   position: absolute;
@@ -455,10 +458,12 @@ footer .byt-footer {
   background-color: $theme-yellow;
   z-index: -2;
 }
-#services .card:hover::before{
+
+#services .card:hover::before {
   background-color: dodgerblue;
   z-index: 0 !important;
 }
+
 .byt-project-img-container {
   overflow: hidden;
   position: relative;
@@ -580,6 +585,14 @@ footer .byt-footer {
 }
 
 /* = Section About Company Media queries = */
+@media all and (min-width: 320px) {
+  .byt-service-text {
+    p, h4 {
+
+    }
+  }
+}
+
 @media all and (max-width: 576px) {
   .byt-sect-about {
     .byt-sect-title:after {
