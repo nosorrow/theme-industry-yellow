@@ -3344,6 +3344,11 @@ section.container-fluid {
 }
 
 /* = 1. Section services = */
+#services .card {
+  align-items: center;
+  justify-content: center;
+}
+
 .byt-service-label {
   position: absolute;
   bottom: 25px;
@@ -3364,7 +3369,6 @@ section.container-fluid {
 
 .byt-service-text {
   position: absolute;
-  left: -25px;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   padding: 15px 40px;
@@ -3374,6 +3378,8 @@ section.container-fluid {
   visibility: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
+  width: 100%;
+  height: 100%;
 }
 .byt-service-text h4 {
   color: #000;
@@ -3385,11 +3391,58 @@ section.container-fluid {
   font-weight: bolder;
 }
 
+#services .bordered:before,
+#services .bordered:after,
+#services .bordered > :last-child:before,
+#services .bordered > :last-child:after {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-color: #f5d109;
+  border-style: solid;
+  content: " ";
+}
+
+#services .bordered:before {
+  top: -10px;
+  left: -10px;
+  border-width: 2px 0 0 2px;
+}
+
+#services .bordered:after {
+  top: -10px;
+  right: -10px;
+  border-width: 2px 2px 0 0;
+}
+
+#services .bordered > :last-child:before {
+  bottom: -10px;
+  right: -10px;
+  border-width: 0 2px 2px 0;
+}
+
+#services .bordered > :last-child:after {
+  bottom: -10px;
+  left: -10px;
+  border-width: 0 0 2px 2px;
+}
+
 @media screen and (max-width: 360px) {
   .byt-service-text {
-    padding: 5px 20px;
+    padding: 5px 15px;
     margin: -40px 0;
     font-size: 0.85em;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .byt-service-text {
+    padding: 5px 15px;
+    margin: -40px 0;
+    min-width: 100%;
+  }
+  .byt-service-text p, .byt-service-text h4, .byt-service-text a {
+    font-size: 0.75em;
   }
 }
 /* = 2. Section Projects = */
@@ -3623,27 +3676,12 @@ footer .byt-footer ::placeholder {
 
 /* = Image hover Effects = */
 .byt-img-container {
+  /* seices image container*/
   position: relative;
   background-color: #f5d109;
   padding: 0;
   border: none;
-  margin: 0 15px 15px 15px;
-}
-
-#services .card::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: -25px;
-  bottom: 25px;
-  background-color: #f5d109;
-  z-index: -2;
-}
-
-#services .card:hover::before {
-  background-color: dodgerblue;
-  z-index: 0 !important;
+  margin: 0 15px 15px 0;
 }
 
 .byt-project-img-container {
