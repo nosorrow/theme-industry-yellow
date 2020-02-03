@@ -3344,11 +3344,6 @@ section.container-fluid {
 }
 
 /* = 1. Section services = */
-#services .card {
-  align-items: center;
-  justify-content: center;
-}
-
 .byt-service-label {
   position: absolute;
   bottom: 25px;
@@ -3391,6 +3386,13 @@ section.container-fluid {
   font-weight: bolder;
 }
 
+.byt-img-container {
+  background-color: #f5d109;
+  padding: 0;
+  border: none;
+  margin: 0 15px 15px 0;
+}
+
 #services .bordered:before,
 #services .bordered:after,
 #services .bordered > :last-child:before,
@@ -3404,26 +3406,26 @@ section.container-fluid {
 }
 
 #services .bordered:before {
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
   border-width: 2px 0 0 2px;
 }
 
 #services .bordered:after {
-  top: -10px;
-  right: -10px;
+  top: -5px;
+  right: -5px;
   border-width: 2px 2px 0 0;
 }
 
 #services .bordered > :last-child:before {
-  bottom: -10px;
-  right: -10px;
+  bottom: -5px;
+  right: -5px;
   border-width: 0 2px 2px 0;
 }
 
 #services .bordered > :last-child:after {
-  bottom: -10px;
-  left: -10px;
+  bottom: -5px;
+  left: -5px;
   border-width: 0 0 2px 2px;
 }
 
@@ -3675,15 +3677,6 @@ footer .byt-footer ::placeholder {
 }
 
 /* = Image hover Effects = */
-.byt-img-container {
-  /* seices image container*/
-  position: relative;
-  background-color: #f5d109;
-  padding: 0;
-  border: none;
-  margin: 0 15px 15px 0;
-}
-
 .byt-project-img-container {
   overflow: hidden;
   position: relative;

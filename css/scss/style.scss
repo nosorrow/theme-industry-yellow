@@ -110,11 +110,6 @@ section.container-fluid {
 }
 
 /* = 1. Section services = */
-
-#services .card {
-  align-items: center;
-  justify-content: center;
-}
 .byt-service-label {
   position: absolute;
   bottom: 25px;
@@ -138,7 +133,6 @@ section.container-fluid {
 
 .byt-service-text {
   position: absolute;
-  //left: -25px;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   padding: 15px 40px;
@@ -180,6 +174,12 @@ section.container-fluid {
 //  z-index: 0 !important;
 //}
 
+.byt-img-container {
+  background-color: $theme-yellow;
+  padding: 0;
+  border: none;
+  margin: 0 15px 15px 0;
+}
 
 #services .bordered:before,
 #services .bordered:after,
@@ -194,26 +194,26 @@ section.container-fluid {
 }
 
 #services .bordered:before {
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
   border-width: 2px 0 0 2px
 }
 
 #services .bordered:after {
-  top: -10px;
-  right: -10px;
+  top: -5px;
+  right: -5px;
   border-width: 2px 2px 0 0
 }
 
 #services .bordered>:last-child:before {
-  bottom: -10px;
-  right: -10px;
+  bottom: -5px;
+  right: -5px;
   border-width: 0 2px 2px 0
 }
 
 #services .bordered>:last-child:after {
-  bottom: -10px;
-  left: -10px;
+  bottom: -5px;
+  left: -5px;
   border-width: 0 0 2px 2px
 }
 
@@ -509,15 +509,6 @@ footer .byt-footer {
 }
 
 /* = Image hover Effects = */
-
-.byt-img-container {
-  /* seices image container*/
-  position: relative;
-  background-color: $theme-yellow;
-  padding: 0;
-  border: none;
-  margin: 0 15px 15px 0;
-}
 
 .byt-project-img-container {
   overflow: hidden;
