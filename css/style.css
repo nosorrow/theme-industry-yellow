@@ -3390,45 +3390,44 @@ section.container-fluid {
   background-color: #f5d109;
   padding: 0;
   border: none;
-  margin: 0 15px 15px 0;
   width: 100%;
   height: auto;
 }
 
-#services .bordered:before,
-#services .bordered:after,
-#services .bordered > :last-child:before,
-#services .bordered > :last-child:after {
+div.corner-border-container {
+  background: white;
+  padding: 1em;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 2em auto;
+  border: solid 2px #f5d109;
+}
+
+div.corner-border-container::before, div::after {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  border-color: #f5d109;
-  border-style: solid;
-  content: " ";
+  background: inherit;
+  content: "";
+  z-index: 1;
 }
 
-#services .bordered:before {
-  top: -5px;
-  left: -5px;
-  border-width: 2px 0 0 2px;
+div.corner-border-container::before {
+  width: 100px;
+  left: calc(50% - 50px);
+  height: calc(100% + 4px);
+  top: -2px;
 }
 
-#services .bordered:after {
-  top: -5px;
-  right: -5px;
-  border-width: 2px 2px 0 0;
+div.bordered::after {
+  height: 100px;
+  left: -2px;
+  width: calc(100% + 4px);
+  top: calc(50% - 50px);
 }
 
-#services .bordered > :last-child:before {
-  bottom: -5px;
-  right: -5px;
-  border-width: 0 2px 2px 0;
-}
-
-#services .bordered > :last-child:after {
-  bottom: -5px;
-  left: -5px;
-  border-width: 0 0 2px 2px;
+div.corner-border-container > * {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 360px) {
