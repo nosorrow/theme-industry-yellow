@@ -1,0 +1,57 @@
+/*-------------------------------
+    = 8. Section Contact us =
+------------------------------- */
+
+.byt-sect-contacts {
+  background: url("../img/contact-bgr.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+
+  h3.byt-sect-title {
+    color: #ffffff;
+    padding-bottom: 1rem;
+  }
+
+  h3.byt-sect-title:after {
+    margin: 0;
+  }
+
+  address {
+    border: 1px solid $theme-blue-grey;
+    padding: 15px;
+  }
+
+  /* = Form formating = */
+
+  input:not([type=submit]),
+  textarea {
+    background-color: $theme-blue-grey;
+    border: none;
+    padding: 25px;
+    color: #fff;
+  }
+
+  ::-webkit-input-placeholder { /* = Edge = */
+    color: $theme-grey-light;
+  }
+
+  :-ms-input-placeholder { /* = Internet Explorer 10-11 = */
+    color: $theme-grey-light;
+  }
+
+  ::placeholder {
+    color: $theme-grey-light;
+  }
+
+}
+
+#map {
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  filter: grayscale(80%);
+}

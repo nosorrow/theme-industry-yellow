@@ -1,0 +1,59 @@
+/* -------------------------------
+      = 6. Section About =
+-------------------------------- */
+.byt-sect-about {
+  background-color: #fff;
+
+  .byt-sect-title:after {
+    margin: 0;
+  }
+
+  h3 {
+    max-width: 50%;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $theme-grey-light;
+  }
+
+  li {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: $theme-grey;
+  }
+
+  i.byt-list-icon {
+    padding-right: 8px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: $theme-yellow;
+  }
+}
+
+/* Section About Company Media queries  */
+
+@media all and (max-width: 576px) {
+  .byt-sect-about {
+    .byt-sect-title:after {
+      margin: 0 auto;
+    }
+
+    h3 {
+      max-width: 100%;
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+  img {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .byt-sectabout-img {
+    padding: 0;
+  }
+}

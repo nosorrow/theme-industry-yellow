@@ -1,0 +1,62 @@
+/* --------------------------------
+    = 1. Global sections styles =
+---------------------------------- */
+section div {
+  z-index: 1;
+}
+
+.white-dark {
+  background: $theme-white-dark;
+}
+
+section.container-fluid {
+  background-color: $theme-white-dark;
+  padding: 20px;
+}
+
+.byt-sect-mb {
+  margin-bottom: 90px !important;
+}
+
+.byt-sect-pt {
+  padding-top: 90px;
+}
+
+.byt-sect-title {
+  letter-spacing: -0.5px;
+}
+
+.byt-sect-title:after {
+  border-bottom: 3px solid $theme-yellow;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 100px;
+}
+
+.byt-sect-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+
+    span {
+      color: $theme-yellow;
+    }
+  }
+
+  li:before {
+    display: inline-block;
+    content: '\203A';
+    margin-right: 8px;
+    bottom: 50%;
+  }
+}
+
+.byt-sect-content-p {
+  color: $font-grey;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}

@@ -1,12 +1,13 @@
-/* Section Hero */
 // https://webdesign.tutsplus.com/tutorials/how-to-make-the-bootstrap-navbar-dropdown-work-on-hover--cms-33840
 
+/*------------------------------
+    == 2. Section Hero ==
+-------------------------------*/
 #hero {
   padding-top: 1rem !important;
 }
 
 .byt-hero {
-  /* Full height */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,12 +60,14 @@
   padding: 1rem 1.5rem;
 
 }
+
 .navbar-brand {
   img {
     width: 100%;
     height: auto;
   }
 }
+
 a.nav-link {
   letter-spacing: -1px;
 }
@@ -125,7 +128,7 @@ div.submenu:hover .dropdown-submenu {
   position: relative;
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
   .dropdown-menu {
     box-shadow: 0px 0 10px 0 rgba(144, 144, 144, .4);
 
@@ -153,6 +156,7 @@ div.submenu:hover .dropdown-submenu {
   box-shadow: 1px 1px 8px #ccc !important;
   background-color: #fff !important;
 }
+
 .changednav a.navbar-brand > img {
   height: 45px;
   width: auto;
@@ -169,15 +173,14 @@ div.submenu:hover .dropdown-submenu {
     display: none;
   }
 
-  nav.navbar{
+  nav.navbar {
     max-height: 100vh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     padding: 0.5rem 1rem;
 
   }
-  #main-menu li.nav-item:hover,
-  #main-menu li.nav-item.active {
+  #main-menu li.nav-item:hover, #main-menu li.nav-item.active {
     border-bottom: none;
   }
 

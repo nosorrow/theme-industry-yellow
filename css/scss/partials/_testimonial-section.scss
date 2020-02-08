@@ -1,0 +1,51 @@
+/*-----------------------------------
+    == 4. Section testimonial ==
+------------------------------------*/
+
+.byt-testimon-bgr {
+  position: relative;
+  margin: 0;
+  min-height: 350px;
+  background-size: cover !important;
+  border-radius: 0 !important;
+}
+
+.byt-carousel {
+  padding: 50px 0;
+  color: white;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  h5 {
+    padding-top: 15px;
+  }
+
+  p {
+    font-weight: lighter;
+    margin: 0 auto;
+    padding: 15px 0 15px;
+  }
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $theme-blue-dark;
+  border: solid 3px rgba(248, 231, 28, .80);
+}
+
+/* Testimonial Carousel Media queries */
+@media all and (min-width: 900px) {
+
+  .carousel-item {
+    p {
+      width: 50% !important;
+
+    }
+  }
+
+}

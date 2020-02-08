@@ -1,0 +1,21 @@
+/*-------------------------
+    == I. Global ==
+---------------------------*/
+@import "variables";
+
+body {
+  font-family: $font-family;
+  background-color: $theme-body-bg;
+}
+
+.byt-btn-yellow {
+  color: #fff;
+  background-color: $btn-yellow-bgr;
+  border-color: $btn-yellow-bgr;
+}
+
+.byt-btn-yellow:hover {
+  color: #fff;
+  background-color: $btn-yellow-bgr-hover;
+  border-color: $btn-yellow-bgr-hover;
+}
