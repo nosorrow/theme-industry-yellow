@@ -1216,3 +1216,23 @@ FileETag None
 #     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
 
+# One month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=31536000, public, must_revalidate"
+Header set Age "31536000"
+</filesMatch>
+
+
+<ifModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif A31536000
+ExpiresByType image/png A31536000
+ExpiresByType image/jpg A31536000
+ExpiresByType image/x-icon A31536000
+ExpiresByType application/pdf A31536000
+ExpiresByType application/x-javascript A31536000
+ExpiresByType text/plain A31536000
+
+# Expires after 4.8 hours
+ExpiresByType text/css A17200
+</ifModule>

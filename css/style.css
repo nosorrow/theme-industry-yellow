@@ -89,12 +89,6 @@ section.container-fluid {
 .byt-sect-list li span {
   color: #f5d109;
 }
-.byt-sect-list li:before {
-  display: inline-block;
-  content: "›";
-  margin-right: 8px;
-  bottom: 50%;
-}
 
 .byt-sect-content-p {
   color: #676767;
@@ -374,7 +368,7 @@ div.submenu:hover .dropdown-submenu {
 }
 
 div.corner-border-container {
-  background: white;
+  background: #f7f9fa;
   padding: 1em;
   position: relative;
   width: 100%;
@@ -663,6 +657,12 @@ footer .byt-footer .byt-sect-title:after {
 footer .byt-footer h2 {
   font-size: 0.95em;
   color: #f7f9fa;
+}
+footer .byt-footer li:before {
+  display: inline-block;
+  content: "›";
+  margin-right: 8px;
+  bottom: 50%;
 }
 footer .byt-footer p, footer .byt-footer a {
   color: #C2C4C8;

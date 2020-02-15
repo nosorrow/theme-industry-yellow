@@ -46,13 +46,6 @@ section.container-fluid {
       color: $theme-yellow;
     }
   }
-
-  li:before {
-    display: inline-block;
-    content: '\203A';
-    margin-right: 8px;
-    bottom: 50%;
-  }
 }
 
 .byt-sect-content-p {

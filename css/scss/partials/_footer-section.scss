@@ -19,6 +19,14 @@ footer .byt-footer {
     color: $theme-white-dark;
   }
 
+
+  li:before {
+    display: inline-block;
+    content: '\203A';
+    margin-right: 8px;
+    bottom: 50%;
+  }
+
   p, a {
     color: $theme-blue-grey-extralight;
     font-weight: lighter;
