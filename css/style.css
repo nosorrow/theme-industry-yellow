@@ -141,6 +141,12 @@ section.container-fluid {
   margin-left: 50%;
   line-height: 2rem;
 }
+.byt-hero-content h5.hero-gradient-title {
+  background: linear-gradient(90deg, white, #969696);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Anton", sans-serif;
+}
 
 /* Navbar styling */
 .bg-white {
@@ -339,10 +345,9 @@ div.submenu:hover .dropdown-submenu {
   position: absolute;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
-  padding: 15px 40px;
-  margin: -20px 0;
+  padding: 0 40px;
   color: white;
-  top: 20%;
+  top: 25%;
   visibility: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
