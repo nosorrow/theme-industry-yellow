@@ -21,10 +21,10 @@ Primary use:    Multipurpose Industrial Template
   III. [ Effects and widgets ]
 
 **********************************************************/
+@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
 /*-------------------------
     == I. Global ==
 ---------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
 body {
   font-family: "Hind", "Helvetica", sans-serif;
   background-color: #f2f4f6;
